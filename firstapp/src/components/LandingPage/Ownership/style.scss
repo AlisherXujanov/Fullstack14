@@ -1,0 +1,43 @@
+.ownership-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .left {
+        text-align: left;
+        padding: 20px 100px 20px 200px;
+        font-family: sans-serif;
+
+        small {
+            color: gray;
+            letter-spacing: 1px;
+        }
+        h1 {
+            // TODO: Do this next lesson
+        }
+        p {
+            color: #444;
+        }
+        button {
+            margin-top: 30px;
+        }
+    }
+    .right {
+        position: relative;
+
+        div {
+            margin-left: 100px;
+
+            .ball {
+                position: absolute;
+            }
+            .big {
+                left: 0;
+                bottom: -35px;
+            }
+            .small {
+                top: -40px;
+                right: 25%;
+            }
+        }
+    }
+}
