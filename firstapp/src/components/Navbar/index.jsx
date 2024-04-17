@@ -1,12 +1,22 @@
 // npm run dev
+
+
+// 1. Revert all changes => Отмена всех изменений
+// 2. git pull  =>  Загрузка изменений с удаленного репозитория
+
+
 import './style.scss'
+import Logo from "../common/Logo"
+
 
 function Navbar() {
     return (
         <header>
             <nav>
                 <div className="left-nav">
-                    <a href="#logo">Logo</a>
+                    <a href="#logo">
+                        <Logo />
+                    </a>
 
                     <div className="search-input">
                         <div className="left">🔍</div>
