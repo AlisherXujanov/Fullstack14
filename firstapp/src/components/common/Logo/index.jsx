@@ -15,7 +15,7 @@ function Logo() {
     return (
         <>
             <div>
-                <img src={Icon1}  style={imgStyle}/>
+                <img src={Icon1}  style={{...imgStyle, height: '30px', position:"relative", top:"3px"}}/>
                 <img src={Icon2}  style={imgStyle}/>
                 <img src={Icon3}  style={imgStyle}/>
             </div>

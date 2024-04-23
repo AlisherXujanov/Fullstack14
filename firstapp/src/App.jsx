@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import LandingPage from './components/LandingPage'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <LandingPage />
+      <Footer />
     </>
   )
 }
