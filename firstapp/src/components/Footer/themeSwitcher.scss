@@ -1,0 +1,56 @@
+$dark: #151515;
+$red: linear-gradient(to right, #ff56bb, #ff8f77);
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .icon {
+        font-size: 1.4em;
+    }
+
+    .switcher {
+        position: relative;
+        width: 42px;
+        height: 22px;
+        background-color: $dark;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $red;
+            position: absolute;
+            left: 1px;
+            transition: 0.3s;
+            z-index: 1;
+        }
+
+        input[type="checkbox"] {
+            width: 42px;
+            height: 22px;
+            border-radius: 10px;
+            position: absolute;
+            opacity: 0;
+            z-index: 2;
+
+            &:checked + .circle {
+                left: 21px;
+            }
+        }
+    }
+}
+
+.dark {
+    background-color: gray;
+    color: white;
+}
+.light {
+    background-color: white;
+    color: $dark;
+}
