@@ -4,7 +4,6 @@ import LandingPage from './components/LandingPage'
 function App() {
   return (
     <>
-      {/* This is test comment */}
       <Navbar />
       <LandingPage />
     </>
@@ -12,3 +11,14 @@ function App() {
 }
 
 export default App
+
+
+
+
+{/* 
+    git checkout -b 'adding-side-bar' 
+    git add .
+    git commit -m "Added Navbar and LandingPage components"
+    git push
+*/}
+
