@@ -6,6 +6,7 @@ import './themeSwitcher.scss'
 function ThemeSwitcher() {
     const [theme, setTheme] = useState('light')
     const [counter, setCounter] = useState(0)
+    const [redGreen, setRedGreen] = useState('white')
 
 
     function switcher(e) {
@@ -20,8 +21,10 @@ function ThemeSwitcher() {
         const role = e.target.getAttribute('role')
         if (role == 'inc') {
             setCounter(counter + 1)
+            setRedGreen('greenyellow')
         } else if (role == 'dec') {
             setCounter(counter - 1)
+            setRedGreen('red')
         } else {
             console.log("Invalid role")
         }
@@ -43,7 +46,7 @@ function ThemeSwitcher() {
 
             <div className="container">
                 <button onClick={changeCounter} role="dec">Decrement</button>
-                <span>{counter}</span>
+                <span style={{color:redGreen}}>{counter}</span>
                 <button onClick={changeCounter} role="inc">Increment</button>
             </div>
         </div>
