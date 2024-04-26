@@ -4,26 +4,6 @@ import "./style.scss"
 import { useState } from 'react'
 
 function Footer(props) {
-    const [range, setRange] = useState(0);
-    const [color, setColor] = useState("");
-    const [translate, setTranslate] = useState(0);
-    const [font, setFont] = useState({});
-
-
-    function rangeHandler(event) {
-        let fontStyle = {fontSize: "1.5rem", fontWeight: "bold"};
-
-        if (parseInt(range) > parseInt(event.target.value)) {
-            setColor("red")
-            setFont({})
-        } else {
-            setColor("green")
-            setFont(fontStyle)
-        }
-        setRange(event.target.value);
-        setTranslate(event.target.value);
-    }
-
     return (
         <footer>
             <div className="left">
@@ -39,8 +19,6 @@ function Footer(props) {
                 </p>
             </div>
             <div className="right">
-                <p style={{color:color, transform:`translateX(${translate}px)`, ...font}}>{range}</p>
-                <input type="range" onChange={rangeHandler} />
             </div>
         </footer>
     );
