@@ -7,26 +7,23 @@
 
 import './style.scss'
 import Logo from "../common/Logo"
-
+import { Link } from "react-router-dom"
+import Searchbar from "../common/Searchbar"
 
 function Navbar() {
     return (
         <header>
             <nav>
                 <div className="left-nav">
-                    <a href="#logo">
+                    <Link to="/">
                         <Logo />
-                    </a>
+                    </Link>
 
-                    <div className="search-input">
-                        <div className="left">🔍</div>
-                        <div className="right">
-                            <input type="search" placeholder="Search" />
-                        </div>
-                    </div>
+                    <Searchbar />
                 </div>
                 <div className="right-nav">
-                    <a href="#explore">Explore</a>
+                    <Link to="/about">About</Link>
+                    <Link to="/explore">Explore</Link>
                     <a href="#trending">Trending🔥</a>
                     <a href="#FAQ">FAQ</a>
                 </div>

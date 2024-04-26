@@ -1,0 +1,27 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.search-input {
+    background-color: #f3f3f3;
+    @include flex(row, center, center);
+    padding: 5px 5px 5px 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+    input {
+        border-radius: 6px;
+        background-color: #f3f3f3;
+        color: black;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: #a0a0a0;
+        }
+    }
+}
