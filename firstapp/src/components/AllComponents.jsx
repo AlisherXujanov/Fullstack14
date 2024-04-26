@@ -14,7 +14,7 @@ function AllComponents(props) {
                 <Route path='/' element={<Layout/>}>
                     <Route index element={<LandingPage/>} />
                     <Route path="/about" element={<About/>} />
-                    <Route path="/exlore" element={<Explore/>} />
+                    <Route path="/explore" element={<Explore/>} />
                     <Route path="/404" element={"404 Page Not Found"} />
                     {/* https://www.youtube.com/...
                     https://www.wikipedia.org/about */}
