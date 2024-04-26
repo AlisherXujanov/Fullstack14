@@ -1,0 +1,23 @@
+.about-page {
+    padding: 50px 0;
+
+    section {
+        .about-company {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .left {
+                .intro {
+                    color: gray;
+                    letter-spacing: 1px;
+                }
+                text-align: left;
+                padding: 20px 100px 20px 200px;
+                font-family: sans-serif;
+            }
+            .right {
+                position: relative;
+            }
+        }
+    }
+}
