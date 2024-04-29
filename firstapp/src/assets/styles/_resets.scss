@@ -32,9 +32,9 @@ a {
     &:hover {
         color: $dark;
     }
-    &:active,
     &.active {
         color: $black;
+        font-weight: bold;
     }
 }
 

@@ -10,7 +10,15 @@ import Logo from "../common/Logo"
 import { Link } from "react-router-dom"
 import Searchbar from "../common/Searchbar"
 
+
 function Navbar() {
+
+    function activateLink(e) {
+        let slash = e.target.href.lastIndexOf("/")
+        let href = e.target.href.slice(slash)
+        console.log(href)
+    }
+
     return (
         <header>
             <nav>
@@ -22,10 +30,10 @@ function Navbar() {
                     <Searchbar />
                 </div>
                 <div className="right-nav">
-                    <Link to="/about">About</Link>
-                    <Link to="/explore">Explore</Link>
-                    <a href="#trending">Trending🔥</a>
-                    <a href="#FAQ">FAQ</a>
+                    <Link onClick={activateLink} to="/about">About</Link>
+                    <Link onClick={activateLink} to="/explore">Explore</Link>
+                    <Link onClick={activateLink} to="/trending">Trending🔥</Link>
+                    <Link onClick={activateLink} to="/FAQ">FAQ</Link>
                 </div>
             </nav>
         </header>
