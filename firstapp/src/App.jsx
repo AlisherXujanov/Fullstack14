@@ -13,9 +13,6 @@ function App() {
 
 export default App
 
-
-
-
 {/* 
     git checkout -b 'adding-side-bar' 
     git add .
