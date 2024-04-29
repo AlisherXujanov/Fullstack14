@@ -31,7 +31,7 @@ function Navbar() {
                 </div>
                 <div className="right-nav">
                     <Link onClick={activateLink} to="/about">About</Link>
-                    <Link onClick={activateLink} to="/explore">Explore</Link>
+                    <Link onClick={activateLink} to="/explore">Not explore</Link>
                     <Link onClick={activateLink} to="/trending">Trending🔥</Link>
                     <Link onClick={activateLink} to="/FAQ">FAQ</Link>
                 </div>
