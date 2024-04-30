@@ -1,0 +1,225 @@
+.collections {
+    h1 {
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    
+    .cards {
+        margin: 0 70px;
+        .card1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 555px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px lightgray;
+
+            div:first-child {
+                img {
+                    width: 245px;
+                    height: 305px;
+                    margin-top: 22px;
+                    margin-left: 22px;
+                }
+            }
+
+            div:last-child {
+                margin-right: 30px;
+
+                img:first-child {
+                    width: 38.73px;
+                    height: 38.73px;
+                    margin-top: 25px;
+                }
+
+                .galochka {
+                    position: absolute;
+                    width: 11px;
+                    height: 11px;
+                    margin-top: 25px;
+                    margin-left: -22px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    margin-top: -40px;
+                    margin-left: 60px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    margin-top: 30px;
+                }
+
+                .desc {
+                    font-size: 12px;
+                    color: #6B6B6B;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 12px;
+                    margin-top: 15px;
+                }
+
+                .bottom-part {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+
+                    div:first-child {
+                        small {
+                            margin-top: 20px;
+                            width: 64px;
+                            font-size: 12px;
+                            color: #6B6B6B;
+                        }
+
+                        img {
+                            width: 9px;
+                            height: 15px;
+                            margin-top: 40px;
+                            margin-left: -60px;
+                        }
+
+                        p {
+                            margin-top: 40px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    div:last-child {
+                        small {
+                            position: absolute;
+                            margin-top: 10px;
+                            width: 35px;
+                            font-size: 12px;
+                            color: #6B6B6B;
+                        }
+
+                        p {
+                            font-weight: 700;
+                            margin-top: 30px;
+                        }
+
+                    }
+
+                }
+
+                .red-btn {
+                    width: 224px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .card2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 555px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px lightgray;
+
+            div:first-child {
+                img {
+                    width: 245px;
+                    height: 305px;
+                    margin-top: 22px;
+                    margin-left: 22px;
+                }
+            }
+
+            div:last-child {
+                margin-right: 30px;
+
+                img:first-child {
+                    width: 38.73px;
+                    height: 38.73px;
+                    margin-top: 25px;
+                }
+
+                .galochka {
+                    position: absolute;
+                    width: 11px;
+                    height: 11px;
+                    margin-top: 25px;
+                    margin-left: -22px;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    margin-top: -40px;
+                    margin-left: 60px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    margin-top: 30px;
+                }
+
+                .desc {
+                    font-size: 12px;
+                    color: #6B6B6B;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 12px;
+                    margin-top: 15px;
+                }
+
+                .bottom-part {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+
+                    div:first-child {
+                        small {
+                            margin-top: 20px;
+                            width: 64px;
+                            font-size: 12px;
+                            color: #6B6B6B;
+                        }
+
+                        img {
+                            width: 9px;
+                            height: 15px;
+                            margin-top: 40px;
+                            margin-left: -60px;
+                        }
+
+                        p {
+                            margin-top: 40px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    div:last-child {
+                        small {
+                            position: absolute;
+                            margin-top: 10px;
+                            width: 35px;
+                            font-size: 12px;
+                            color: #6B6B6B;
+                        }
+
+                        p {
+                            font-weight: 700;
+                            margin-top: 30px;
+                        }
+
+                    }
+
+                }
+
+                .red-btn {
+                    width: 224px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
