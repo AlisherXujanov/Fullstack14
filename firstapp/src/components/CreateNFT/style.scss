@@ -1,0 +1,72 @@
+@import "../../assets/styles/settings";
+
+.nft-form-wrapper {
+    padding: 0 100px;
+
+    h1 {
+        text-align: center;
+    }
+
+    div.form {
+        @include grid(2);
+        padding: 50px;
+
+        form {
+            padding: 0 20px;
+
+            .form-control {
+                margin: 20px 0;
+
+                label {
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                small {
+                    display: block;
+                    margin: 10px 0;
+                    color: $gray;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 20px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: none;
+                    background-color: $gray-l;
+                    margin-bottom: 5px;
+
+                    &::placeholder {
+                        color: $gray;
+                        font-family: sans-serif;
+                    }
+                }
+                textarea {
+                    height: 200px;
+                }
+
+                .nft-image-wrapper {
+                    position: relative;
+                    background-color: $gray-l;
+                    width: 100%;
+                    @include flex(column, center, center, 0);
+                    border-radius: 10px;
+                    padding: 50px 0;
+
+                    input[type="file"] {
+                        height: 200px;
+                        width: 100%;
+                        position: absolute;
+                        opacity: 0;
+                    }
+
+                    small {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}
