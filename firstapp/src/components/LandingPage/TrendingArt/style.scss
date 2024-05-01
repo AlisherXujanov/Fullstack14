@@ -5,9 +5,10 @@
     margin-top: 200px;
     margin-bottom: 100px;
 
+    
     h2 {
         font-size: 40px;
-        margin-left: 200px;
+        margin-left: 150px;
     }
 
     p {
@@ -21,18 +22,18 @@
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 0 50px;
+    gap: 20px;
+    margin: 0 150px;
 
     .card1 {
-        width: 290px;
-        height: 400px;
+        width: 230px;
+        height: 340px;
         border-radius: 5px;
         box-shadow: 3px 3px 8px lightgray;
 
         img {
-            width: 268px;
-            height: 278px;
+            width: 210px;
+            height: 220px;
             border-radius: 5px;
             margin: 10px;
         }
@@ -47,14 +48,14 @@
         .bottom-part {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 100px;
+            gap: 50px;
 
             div:first-child {
                 display: flex;
 
                 .personPic {
-                    width: 38.3px;
-                    height: 38.3px;
+                    width: 35.3px;
+                    height: 35.3px;
                     margin-top: 10px;
                     margin-left: 10px;
                     position: relative;
@@ -69,7 +70,7 @@
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 700;
                     margin-top: 20px;
                     margin-left: -5px;
@@ -97,7 +98,7 @@
                     }
 
                     p {
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 700;
                         margin-top: -10px;
                         margin-left: -5px;
@@ -108,14 +109,14 @@
     }
 
     .card2 {
-        width: 290px;
-        height: 400px;
+        width: 230px;
+        height: 340px;
         border-radius: 5px;
         box-shadow: 3px 3px 8px lightgray;
 
         img {
-            width: 268px;
-            height: 278px;
+            width: 210px;
+            height: 220px;
             border-radius: 5px;
             margin: 10px;
         }
@@ -130,14 +131,14 @@
         .bottom-part {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 100px;
+            gap: 70px;
 
             div:first-child {
                 display: flex;
 
                 .personPic {
-                    width: 38.3px;
-                    height: 38.3px;
+                    width: 35.3px;
+                    height: 35.3px;
                     margin-top: 10px;
                     margin-left: 10px;
                     position: relative;
@@ -152,7 +153,7 @@
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 700;
                     margin-top: 20px;
                     margin-left: -5px;
@@ -180,7 +181,7 @@
                     }
 
                     p {
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 700;
                         margin-top: -10px;
                         margin-left: -5px;
@@ -191,14 +192,14 @@
     }
 
     .card3 {
-        width: 290px;
-        height: 400px;
+        width: 230px;
+        height: 340px;
         border-radius: 5px;
         box-shadow: 3px 3px 8px lightgray;
 
         img {
-            width: 268px;
-            height: 278px;
+            width: 210px;
+            height: 220px;
             border-radius: 5px;
             margin: 10px;
         }
@@ -213,14 +214,14 @@
         .bottom-part {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 100px;
+            gap: 60px;
 
             div:first-child {
                 display: flex;
 
                 .personPic {
-                    width: 38.3px;
-                    height: 38.3px;
+                    width: 35.3px;
+                    height: 35.3px;
                     margin-top: 10px;
                     margin-left: 10px;
                     position: relative;
@@ -235,7 +236,7 @@
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 700;
                     margin-top: 20px;
                     margin-left: -5px;
@@ -263,7 +264,7 @@
                     }
 
                     p {
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 700;
                         margin-top: -10px;
                         margin-left: -5px;
@@ -274,14 +275,14 @@
     }
 
     .card4 {
-        width: 290px;
-        height: 400px;
+        width: 230px;
+        height: 340px;
         border-radius: 5px;
         box-shadow: 3px 3px 8px lightgray;
 
         img {
-            width: 268px;
-            height: 278px;
+            width: 210px;
+            height: 220px;
             border-radius: 5px;
             margin: 10px;
         }
@@ -296,14 +297,14 @@
         .bottom-part {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 100px;
+            gap: 70px;
 
             div:first-child {
                 display: flex;
 
                 .personPic {
-                    width: 38.3px;
-                    height: 38.3px;
+                    width: 35.3px;
+                    height: 35.3px;
                     margin-top: 10px;
                     margin-left: 10px;
                     position: relative;
@@ -318,7 +319,7 @@
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 700;
                     margin-top: 20px;
                     margin-left: -5px;
@@ -346,7 +347,7 @@
                     }
 
                     p {
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 700;
                         margin-top: -10px;
                         margin-left: -5px;

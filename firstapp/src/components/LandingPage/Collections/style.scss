@@ -1,37 +1,36 @@
 .collections {
     h1 {
         text-align: center;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-bottom: 100px;
     }
     
     .cards {
-        margin: 0 70px;
+        margin: 0 150px;
+        
         .card1 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            width: 555px;
-            height: 350px;
+            gap: 10px;
+            width: 480px;
+            height: 300px;
             border-radius: 10px;
             box-shadow: 3px 3px 8px lightgray;
 
             div:first-child {
                 img {
-                    width: 245px;
-                    height: 305px;
-                    margin-top: 22px;
-                    margin-left: 22px;
+                    width: 210px;
+                    height: 260px;
+                    margin: 20px;
                 }
             }
-            // ...
 
             div:last-child {
                 margin-right: 30px;
 
                 img:first-child {
-                    width: 38.73px;
-                    height: 38.73px;
+                    width: 35.73px;
+                    height: 35.73px;
                     margin-top: 25px;
                 }
 
@@ -44,14 +43,14 @@
                 }
 
                 h3 {
-                    font-size: 15px;
+                    font-size: 14px;
                     margin-top: -40px;
                     margin-left: 60px;
                 }
 
                 h2 {
-                    font-size: 32px;
-                    margin-top: 30px;
+                    font-size: 28px;
+                    margin-top: 20px;
                 }
 
                 .desc {
@@ -62,7 +61,7 @@
 
                 p {
                     font-size: 12px;
-                    margin-top: 15px;
+                    margin-top: 10px;
                 }
 
                 .bottom-part {
@@ -110,26 +109,25 @@
                 }
 
                 .red-btn {
-                    width: 224px;
-                    margin-top: 15px;
+                    width: 200px;
+                    margin-top: -15px;
                 }
             }
         }
         .card2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            width: 555px;
-            height: 350px;
+            gap: 10px;
+            width: 480px;
+            height: 300px;
             border-radius: 10px;
             box-shadow: 3px 3px 8px lightgray;
 
             div:first-child {
                 img {
-                    width: 245px;
-                    height: 305px;
-                    margin-top: 22px;
-                    margin-left: 22px;
+                    width: 210px;
+                    height: 260px;
+                    margin: 20px;
                 }
             }
 
@@ -137,8 +135,8 @@
                 margin-right: 30px;
 
                 img:first-child {
-                    width: 38.73px;
-                    height: 38.73px;
+                    width: 35.73px;
+                    height: 35.73px;
                     margin-top: 25px;
                 }
 
@@ -151,14 +149,14 @@
                 }
 
                 h3 {
-                    font-size: 15px;
+                    font-size: 14px;
                     margin-top: -40px;
                     margin-left: 60px;
                 }
 
                 h2 {
-                    font-size: 32px;
-                    margin-top: 30px;
+                    font-size: 28px;
+                    margin-top: 20px;
                 }
 
                 .desc {
@@ -169,7 +167,7 @@
 
                 p {
                     font-size: 12px;
-                    margin-top: 15px;
+                    margin-top: 10px;
                 }
 
                 .bottom-part {
@@ -217,8 +215,8 @@
                 }
 
                 .red-btn {
-                    width: 224px;
-                    margin-top: 15px;
+                    width: 200px;
+                    margin-top: -15px;
                 }
             }
         }
