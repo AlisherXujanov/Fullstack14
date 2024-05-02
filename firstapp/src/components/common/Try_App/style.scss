@@ -1,0 +1,46 @@
+
+.TryApp{
+    background-color: black;
+    width: 1000px;
+    height: 320px;
+    margin: 200px auto;
+    position: relative;
+    border-radius: 20px;
+    .ball{
+        position: absolute;
+        left: -80px;
+        top: -80px;
+    }
+    .text{
+        font-size: 4em;
+        color: white ;
+        font-family: "DM Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+        width: 400px;
+        line-height: 80px;
+        position: absolute;        
+        left: 100px;
+        top: 50px;
+    }
+    
+    button{
+        position: absolute;        
+        left: 100px;
+        bottom: 60px;
+        background-color: transparent;
+        border: white 2px solid;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-right: 10px;
+        }
+
+    }
+    .phone{
+        position: absolute;
+        right: 80px;
+        bottom: -37px;
+        transform: scale(0.85);
+    }
+}
