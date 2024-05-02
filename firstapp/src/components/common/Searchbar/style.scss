@@ -1,16 +1,17 @@
-@mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-}
+@import "../../../assets/styles/settings";
 
 .search-input {
     background-color: #f3f3f3;
-    @include flex(row, center, center);
+    @include grid();
+    grid-template-columns: 15px 1fr;
     padding: 5px 5px 5px 10px;
     border-radius: 10px;
     margin-left: 20px;
+
+    img {
+        position: relative;
+        top: 2px;
+    }
 
     input {
         border-radius: 6px;

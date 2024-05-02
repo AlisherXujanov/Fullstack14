@@ -42,11 +42,15 @@ $large: 1440px;
 // @include flex(column, flex-start, flex-start, 20px);   ->   specific values
 // ========================================================================================
 // GRID
-@mixin grid($columns, $size: 1fr, $gap: 10px, $rows: false) {
+@mixin grid($gap: 10px, $columns: false, $rows: false, $size: 1fr) {
     display: grid;
-    grid-template-columns: repeat($columns, $size);
+    justify-content: center;
+    align-items: center;
     gap: $gap;
 
+    @if $columns {
+        grid-template-columns: repeat($columns, $size);
+    }
     @if $rows {
         grid-template-rows: repeat($rows, $size);
     }
