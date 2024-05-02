@@ -4,6 +4,7 @@ import LandingPage from "./LandingPage"
 import About from "./About"
 import Explore from "./Explore"
 import CreateNFT from './CreateNFT'
+import Page404 from './Page404'
 
 // eslint-disable-next-line no-unused-vars
 function AllComponents(props) {
@@ -17,7 +18,7 @@ function AllComponents(props) {
                     <Route path="/about" element={<About/>} />
                     <Route path="/create-nft" element={<CreateNFT/>} />
                     <Route path="/explore" element={<Explore/>} />
-                    <Route path="/404" element={"404 Page Not Found"} />
+                    <Route path="*" element={<Page404 />} />
                     {/* https://www.youtube.com/...
                     https://www.wikipedia.org/about */}
                 </Route>

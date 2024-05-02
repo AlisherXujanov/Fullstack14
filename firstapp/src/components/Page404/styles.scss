@@ -1,0 +1,23 @@
+@use "../../assets/styles/_resets";
+@import "../../assets/styles/_settings";
+
+.page-not-found-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+        width: 100%;
+        padding: 30px 150px;
+        text-align: left;
+        background-color: $gray-l;
+    }
+    .not-found-text {
+        color: $red;
+    }
+
+    .brands-img {
+        margin: 100px 0;
+    }
+}
