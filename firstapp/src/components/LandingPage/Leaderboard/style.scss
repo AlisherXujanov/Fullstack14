@@ -6,7 +6,10 @@ $dark: #191919;
     background-color: $dark;
     color: #ffffff;
     padding: 50px 0;
-
+    .size{
+        width: 1500px;
+        margin: 0 auto;
+    }
     h2 {
         margin-bottom: 100px;
     }
