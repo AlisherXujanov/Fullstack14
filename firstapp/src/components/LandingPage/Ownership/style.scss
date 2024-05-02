@@ -1,6 +1,8 @@
+@import "../../../assets/styles/settings";
+
 .ownership-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid($columns: 2, $size: 1fr);
+    @include wave($light, $gray-l);
 
     .left {
         text-align: left;
@@ -11,7 +13,7 @@
             color: gray;
             letter-spacing: 1px;
         }
-        
+
         p {
             color: #444;
         }

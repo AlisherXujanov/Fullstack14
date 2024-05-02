@@ -1,11 +1,8 @@
 .top-part {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 500px;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px 0;
 
-    
     h2 {
         font-size: 40px;
         margin-left: 150px;
