@@ -1,11 +1,17 @@
 @import "../../assets/styles/settings";
 
 .nft-form-wrapper {
-    @include wave($light, $gray-l, $padding: 0 100px 180px 100px);
-
     h1 {
+        position: absolute;
+        left: 0;
+        top: 200px;
+        width: 100%;
+        height: 80vh;
+        z-index: -1;
         text-align: center;
+        @include wave($light, $light-l, $padding: 0 100px 180px 100px);
     }
+    padding: 120px 100px;
 
     div.form {
         @include grid($gap: 100px, $columns: 2, $align: flex-start);
@@ -133,7 +139,12 @@
         .demonstration {
             padding: 30px;
             border-radius: 20px;
-            background: linear-gradient(to bottom, $gray-l, $light);
+            // background: linear-gradient(to bottom, $gray-l, $light);
+            background-color: $light;
+
+            // box-shadow only to the bottom
+            box-shadow: 0 10px 50px $gray-t;
+
             h2 {
                 text-align: center;
                 margin-bottom: 10px;
