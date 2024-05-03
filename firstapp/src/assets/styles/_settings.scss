@@ -71,7 +71,7 @@ $large: 1440px;
 // WAVE EFFECT
 @mixin wave($color1, $color2, $padding: false) {
     background: linear-gradient(to bottom, $color1, $color2);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 60% 80%, 30% 85%, 20% 80%, 0 75%);
+    clip-path: polygon(100% 0, 100% 94%, 88% 98%, 73% 100%, 52% 97%, 37% 91%, 24% 86%, 11% 83%, 0 84%, 0 1%);
 
     @if ($padding) {
         padding: $padding;

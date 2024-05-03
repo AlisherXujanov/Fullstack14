@@ -1,7 +1,7 @@
 @import "../../assets/styles/settings";
 
 .nft-form-wrapper {
-    @include wave($light, $gray-l, $padding: 0 100px 300px 100px);
+    @include wave($light, $gray-l, $padding: 0 100px 100px 100px);
 
     h1 {
         text-align: center;
