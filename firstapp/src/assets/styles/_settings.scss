@@ -43,10 +43,10 @@ $large: 1440px;
 // @include flex(direction, justify, align, 20px);   ->   specific values
 // ========================================================================================
 // GRID
-@mixin grid($gap: 10px, $columns: false, $rows: false, $size: 1fr) {
+@mixin grid($gap: 10px, $columns: false, $rows: false, $size: 1fr, $align: center, $justify: center) {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
     gap: $gap;
 
     @if $columns {
@@ -56,8 +56,8 @@ $large: 1440px;
         grid-template-rows: repeat($rows, $size);
     }
 }
-// @include grid(3);   ->  default values
-// @include grid(3, 100px, 20px, 2);   ->   specific values
+// @include grid();   ->  default values
+// @include grid(columns:3, $size:100px);   ->   specific values
 // ========================================================================================
 // ROUNDED CORNERS
 @mixin rounded($width, $height, $radius: 50%) {
@@ -69,8 +69,14 @@ $large: 1440px;
 // @include rounded(50px, 50px, 10px);   ->   specific values
 // ========================================================================================
 // WAVE EFFECT
-@mixin wave($color1, $color2) {
+@mixin wave($color1, $color2, $padding: false) {
     background: linear-gradient(to bottom, $color1, $color2);
-    padding: 20px 0 200px 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 60% 80%, 30% 85%, 20% 80%, 0 75%);
+
+    @if ($padding) {
+        padding: $padding;
+    } @else {
+        padding: 20px 0 200px 0;
+    }
 }
+// ========================================================================================
