@@ -4,6 +4,9 @@
     @include grid($columns: 2, $size: 1fr);
     @include wave($light, $gray-l);
 
+    width: 1500px;
+    margin: 0 auto;
+
     .left {
         text-align: left;
         padding: 20px 100px 20px 200px;
