@@ -8,7 +8,8 @@
     }
 
     div.form {
-        @include grid(2);
+        // $gap: 10px, $columns: false, $rows: false, $size: 1fr
+        @include grid($columns: 2);
         padding: 50px;
 
         form {

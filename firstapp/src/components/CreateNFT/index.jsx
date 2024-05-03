@@ -9,6 +9,8 @@ import { useState } from "react"
 function CreateNFT(props) {
     const [option, setOption] = useState("ExBoot Collection")
     const [showOption, setShowOption] = useState(false)
+    const [nftImage, setNFTImage] = useState(Salin5)
+
 
     function activateOption(e) {
         setOption(e.target.textContent)
@@ -16,6 +18,16 @@ function CreateNFT(props) {
     function activateShowOption(e) {
         setShowOption(!showOption)
     }
+
+    function setNFTImageFn(e) {
+        const file = e.target.files[0]
+        const reader = new FileReader()
+        reader.readAsDataURL(file)
+        reader.onload = function () {
+            setNFTImage(reader.result)
+        }
+    }
+
 
     return (
         <div className="nft-form-wrapper">
@@ -27,7 +39,7 @@ function CreateNFT(props) {
                         <label htmlFor="nft-image">Upload your NFT</label>
                         <small>File types supported: JPG, PNG, GIF, SVG, MP4</small>
                         <div className="nft-image-wrapper">
-                            <input id="nft-image" type="file" placeholder="Upload or drag here"/>
+                            <input id="nft-image" type="file" placeholder="Upload or drag here" onChange={setNFTImageFn} />
                             <img src={AddImage} alt="" />
                             <small>Upload or drag here</small>
                         </div>
@@ -44,19 +56,19 @@ function CreateNFT(props) {
                         <label htmlFor="collections">Collections</label>
 
                         <div className="options-wrapper" onClick={activateShowOption}
-                            style={showOption ? {boxShadow:'-2px -2px 16px lightgray'} : {boxShadow:'0 0'}}
+                            style={showOption ? { boxShadow: '-2px -2px 16px lightgray' } : { boxShadow: '0 0' }}
                         >
                             <div className="option-image">
                                 <img src={Sali} alt="Collection-image" />
                             </div>
                             <div className="option-value">
                                 {option}
-                                <img 
-                                    style={showOption ? {transform:'rotate(180deg)'} : {transform:'rotate(0)'}}
-                                    src={bottomVector} alt="vector-image" 
+                                <img
+                                    style={showOption ? { transform: 'rotate(180deg)' } : { transform: 'rotate(0)' }}
+                                    src={bottomVector} alt="vector-image"
                                 />
                             </div>
-                            <div style={showOption ? {display:'block'} : {display:'none'}} className="drp-content">
+                            <div style={showOption ? { display: 'block' } : { display: 'none' }} className="drp-content">
                                 <div onClick={activateOption}>ExBoot Collection</div>
                                 <div onClick={activateOption}>ExBoot Collection 2</div>
                                 <div onClick={activateOption}>ExBoot Collection 3</div>
@@ -65,7 +77,9 @@ function CreateNFT(props) {
                     </div>
                 </form>
                 <div className="demonstration">
-
+                    <div className="container">
+                        <img src={nftImage} alt="NFT image" />
+                    </div>
                 </div>
             </div>
         </div>
