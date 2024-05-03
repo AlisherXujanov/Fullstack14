@@ -1,0 +1,122 @@
+@import "../../assets/styles/settings";
+
+.nft-form-wrapper {
+    padding: 0 100px;
+
+    h1 {
+        text-align: center;
+    }
+
+    div.form {
+        // $gap: 10px, $columns: false, $rows: false, $size: 1fr
+        @include grid($columns: 2);
+        padding: 50px;
+
+        form {
+            padding: 0 20px;
+            width: 600px;
+
+            .form-control {
+                margin: 20px 0;
+
+                label {
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                small {
+                    display: block;
+                    margin: 10px 0;
+                    color: $gray;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 20px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: none;
+                    background-color: $gray-l;
+                    margin-bottom: 5px;
+
+                    &::placeholder {
+                        color: $gray;
+                        font-family: sans-serif;
+                    }
+                }
+                textarea {
+                    height: 180px;
+                }
+
+                .nft-image-wrapper {
+                    position: relative;
+                    background-color: $gray-l;
+                    width: 100%;
+                    @include flex(column, center, center, 0);
+                    border-radius: 10px;
+                    padding: 100px 0;
+
+                    input[type="file"] {
+                        cursor: pointer;
+                        height: 200px;
+                        width: 100%;
+                        position: absolute;
+                        opacity: 0;
+                    }
+
+                    small {
+                        color: $gray;
+                    }
+                }
+
+                .options-wrapper {
+                    background-color: $gray-l;
+                    @include flex(row, flex-start);
+                    padding: 10px;
+                    border-radius: 10px;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        position: relative;
+                        top: 3px;
+                    }
+
+                    .option-value {
+                        img {
+                            position: absolute;
+                            right: 20px;
+                            top: 30px;
+                        }
+                    }
+
+                    .drp-content {
+                        position: absolute;
+                        z-index: 10;
+                        top: 65px;
+                        left: 0;
+                        background-color: $gray-l;
+                        border-radius: 10px;
+                        box-shadow: 0 10px 20px $gray-t;
+                        display: none;
+
+                        div {
+                            padding: 10px 20px;
+                            background-color: $gray-l;
+                            border-radius: 10px;
+                            width: 100%;
+                            width: 560px;
+
+                            &:hover {
+                                background-color: $light;
+                                color: $black;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

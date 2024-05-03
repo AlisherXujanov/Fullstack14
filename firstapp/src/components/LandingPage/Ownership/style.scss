@@ -1,8 +1,11 @@
+@import "../../../assets/styles/settings";
+
 .ownership-wrapper {
+    @include grid($columns: 2, $size: 1fr);
+    @include wave($light, $gray-l);
+
     width: 1500px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
     .left {
         text-align: left;
@@ -13,9 +16,7 @@
             color: gray;
             letter-spacing: 1px;
         }
-        h1 {
-            // TODO: Do this next lesson
-        }
+
         p {
             color: #444;
         }
