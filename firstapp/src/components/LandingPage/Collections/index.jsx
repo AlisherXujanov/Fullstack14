@@ -9,7 +9,7 @@ import "./style.scss"
 
 function Collections() {
     return (
-        <section className="collections">
+        <section className="collections-wrapper">
             <Card id="1" image={Card1}></Card>
             <Card id="2" image={Card2}></Card>
         </section>
