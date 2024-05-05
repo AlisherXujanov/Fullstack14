@@ -1,3 +1,4 @@
+@import "../../../assets/styles/settings";
 .explore-wrapper{
     width: 1500px;
     margin: 0 auto;
@@ -13,6 +14,6 @@
         border-radius: 25px;
     }
     .cards{
-        @include grid();
+        @include grid($gap: 30px, $columns: 4);
     }
 }

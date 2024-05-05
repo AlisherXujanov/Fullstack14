@@ -1,11 +1,11 @@
 import Galochka from "../../../assets/icons/trendingart/galochka.png"
-
+import "./style.scss"
 
 function Card(props) {
     return (
         <div className="card-wrapper">
             <img src={props.img} alt="" />
-            <h4>{props.name}</h4>
+            <h3>{props.name}</h3>
             <div className="card-bottom">
             <div className="left">
                 <img src={props.profile} alt="" />
