@@ -11,7 +11,8 @@ import "./style.scss"
 
 function TrendingArt() {
     return (
-        <>
+        <div className="trending-art-wrapper">
+
             <div className="top-part">
                  <h2>Trending Art 🔥</h2>
                  <p>Discover more</p>
@@ -92,7 +93,8 @@ function TrendingArt() {
                      </div>
                  </div>
             </div>
-        </>
+        </div>
+        
     );
 }
 

@@ -1,4 +1,7 @@
+@import "../../../assets/styles/settings";
 .collections {
+    width: 1500px;
+    margin: 0 auto;
     h1 {
         text-align: center;
         margin-top: 150px;
@@ -7,11 +10,9 @@
     
     .cards {
         margin: 0 150px;
-        
+        @include grid($gap: 20px, $columns: 4);
         .card1 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            @include grid($gap: 10px, $columns: 2);
             width: 480px;
             height: 300px;
             border-radius: 10px;
@@ -20,8 +21,8 @@
             div:first-child {
                 img {
                     width: 210px;
-                    height: 260px;
-                    margin: 20px;
+                    height: 270px;
+                    margin-left: 20px;
                 }
             }
 
@@ -34,12 +35,15 @@
                     margin-top: 25px;
                 }
 
-                .galochka {
-                    position: absolute;
-                    width: 11px;
-                    height: 11px;
-                    margin-top: 25px;
-                    margin-left: -22px;
+                .personPic{
+                    position: relative;
+                    .galochka {
+                        position: absolute;
+                        width: 11px;
+                        height: 11px;
+                        left: 28px;
+                        top: 23px;
+                    }
                 }
 
                 h3 {
@@ -65,9 +69,8 @@
                 }
 
                 .bottom-part {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 10px;
+                    @include grid($gap: 10px, $columns: 2);
+
 
                     div:first-child {
                         small {
@@ -115,9 +118,7 @@
             }
         }
         .card2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            @include grid($gap: 10px, $columns: 2);
             width: 480px;
             height: 300px;
             border-radius: 10px;
@@ -127,7 +128,7 @@
                 img {
                     width: 210px;
                     height: 260px;
-                    margin: 20px;
+                    margin-left: 20px;
                 }
             }
 
@@ -139,13 +140,15 @@
                     height: 35.73px;
                     margin-top: 25px;
                 }
-
-                .galochka {
-                    position: absolute;
-                    width: 11px;
-                    height: 11px;
-                    margin-top: 25px;
-                    margin-left: -22px;
+                .personPic{
+                    position: relative;
+                    .galochka {
+                        position: absolute;
+                        width: 11px;
+                        height: 11px;
+                        left: 28px;
+                        top: 10px;
+                    }
                 }
 
                 h3 {
@@ -171,10 +174,7 @@
                 }
 
                 .bottom-part {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 10px;
-
+                    @include grid($gap: 10px, $columns: 2);
                     div:first-child {
                         small {
                             margin-top: 20px;

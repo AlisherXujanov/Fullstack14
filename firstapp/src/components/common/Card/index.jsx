@@ -1,4 +1,5 @@
 import Galochka from "../../../assets/icons/trendingart/galochka.png"
+import EtheriumImg from "../../../assets/icons/trendingart/crypto-sign.png"
 import "./style.scss"
 
 function Card(props) {
@@ -13,9 +14,9 @@ function Card(props) {
                 <div className="left-name">{props.author}</div>
             </div>
             <div className="right">
-            <div className="right-name">Current Bid</div>
+            <h6 className="right-name">Current Bid</h6>
             <div className="right-price">
-                <img src="" alt="" />
+                <img src={EtheriumImg} alt="" />
                 <p>3,421</p>
             </div>
             </div>
