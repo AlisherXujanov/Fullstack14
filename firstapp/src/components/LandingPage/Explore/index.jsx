@@ -16,6 +16,7 @@ import Person1 from "../../../assets/imgs/leaderboard/imo1.png"
 import Person2 from "../../../assets/imgs/leaderboard/imo2.png"
 import Person3 from "../../../assets/imgs/leaderboard/imo3.png"
 import Person4 from "../../../assets/imgs/leaderboard/imo4.png"
+import Person5 from "../../../assets/imgs/leaderboard/imo5.png"
 
 function Explore(props){
     return(
@@ -29,17 +30,17 @@ function Explore(props){
             
             <div className="cards">
                 <Card img={Card1} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card2} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card3} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card4} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card5} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card6} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card7} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card8} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
+                <Card img={Card2} name="ExBoot #2" author="Antonson" profile={Person5}></Card>
+                <Card img={Card3} name="Future of Polygon X" author="Micheal" profile={Person4}></Card>
+                <Card img={Card4} name="Blue wave #2" author="Anderson" profile={Person3}></Card>
+                <Card img={Card5} name="ExBoot #1" author="Micheal" profile={Person4}></Card>
+                <Card img={Card6} name="ExBoot #2" author="Richard" profile={Person2}></Card>
+                <Card img={Card7} name="Future of Polygon X" author="Anderson" profile={Person3}></Card>
+                <Card img={Card8} name="Blue wave #2" author="Antonson" profile={Person5}></Card>
                 <Card img={Card9} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card10} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card11} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
-                <Card img={Card12} name="ExBoot #1" author="Perperzon" profile={Person1}></Card>
+                <Card img={Card10} name="ExBoot #2" author="Antonson" profile={Person5}></Card>
+                <Card img={Card11} name="Future of Polygon X" author="Micheal" profile={Person4}></Card>
+                <Card img={Card12} name="Blue wave #2" author="Richard" profile={Person3}></Card>
             </div>
         </div>
     )
