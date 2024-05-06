@@ -1,0 +1,36 @@
+@import "../../../assets/styles/settings";
+.card-wrapper{
+    background-color: $gray-l;
+    padding: 10px;
+    height: 375px;
+    &>img{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .card-bottom{
+        height: 100px;
+        @include flex(row, space-between, center, flex-end);
+        .left{
+            @include flex(row, space-between, center);
+            font-weight: bold;
+            position: relative;
+            img:not(:first-child){
+                position: absolute;
+                left: 25px;
+                top: -2px;
+            }
+            img:first-child{
+                width: 35px;
+            }
+        }
+        .right{
+            @include flex(column, space-between, center);
+            color:rgb(159, 159, 159) ;
+            .right-price{
+                @include flex(row, space-between, center);
+                color: $dark;
+                font-weight: bold;
+            }
+        }
+    }
+}
