@@ -1,23 +1,31 @@
 @import "../../../assets/styles/settings";
-.explore-wrapper{
-    width: 1550px;
+.explore-wrapper-in-landing {
+    width: 1450px;
     margin: 0 auto;
-    h1{
-        float: left;
-        position: relative;
-        left: 150px;
+
+    .top-wrapper {
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        h1 {
+            float: left;
+            position: relative;
+            left: 150px;
+        }
+        select {
+            position: relative;
+            right: 150px;
+            float: right;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 15px 25px;
+            border-radius: 25px;
+        }
     }
-    select{
-        position: relative;
-        right: 150px;
-        float: right;
-        display: inline-block;
-        font-weight: bold;
-        font-size: 1.2em;
-        padding: 15px 25px;
-        border-radius: 25px;
-    }
-    .cards{
+    .cards {
         @include grid($gap: 20px, $columns: 4);
         margin-top: 100px;
     }
