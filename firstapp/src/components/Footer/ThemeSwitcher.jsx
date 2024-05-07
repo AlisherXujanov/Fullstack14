@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './themeSwitcher.scss'
 
 
-// eslint-disable-next-line no-unused-vars
 function ThemeSwitcher() {
     const [theme, setTheme] = useState('light')
 

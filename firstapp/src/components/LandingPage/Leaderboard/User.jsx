@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Eth from "../../../assets/icons/Etherium.png"
 
 function User(props) {

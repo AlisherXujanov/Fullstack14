@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Galochka from "../../../assets/icons/trendingart/galochka.png"
 import EtheriumImg from "../../../assets/icons/trendingart/crypto-sign.png"
 import "./style.scss"

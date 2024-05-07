@@ -9,7 +9,7 @@ $gray: #6b6b6b;
 $gray-t: #6b6b6b30;
 $gray-l: #f3f3f3;
 $light: #ffffff;
-$light-l: #fafafa;
+$light-l: rgb(250, 250, 245);
 
 // ========================================================================================
 // SIZES
@@ -69,14 +69,8 @@ $large: 1440px;
 // @include rounded(50px, 50px, 10px);   ->   specific values
 // ========================================================================================
 // WAVE EFFECT
-@mixin wave($color1, $color2, $padding: false) {
+@mixin wave($color1, $color2) {
     background: linear-gradient(to bottom, $color1, $color2);
     clip-path: polygon(100% 0, 100% 94%, 88% 98%, 73% 100%, 52% 97%, 37% 91%, 24% 86%, 11% 83%, 0 84%, 0 1%);
-
-    @if ($padding) {
-        padding: $padding;
-    } @else {
-        padding: 20px 0 200px 0;
-    }
 }
 // ========================================================================================

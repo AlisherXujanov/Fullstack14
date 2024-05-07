@@ -2,7 +2,6 @@ import "./style.scss"
 import Searchbar from "../common/Searchbar";
 
 
-/* eslint-disable no-unused-vars */
 function Explore(props) {
     return (
         <div className="explore-wrapper">

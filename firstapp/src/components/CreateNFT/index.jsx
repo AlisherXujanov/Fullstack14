@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Salin5 from "../../assets/imgs/Salin5.jpg"
 import Sali from "../../assets/icons/Sali.png"
 import AddImage from '../../assets/icons/addImage.png'

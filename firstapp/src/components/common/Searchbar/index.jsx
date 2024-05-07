@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "./style.scss"
 import SearchIcon from '../../../assets/icons/search.png'
 import { useContext } from 'react'

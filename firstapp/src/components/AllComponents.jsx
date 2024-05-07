@@ -6,7 +6,6 @@ import Explore from "./Explore"
 import CreateNFT from './CreateNFT'
 import Page404 from './Page404'
 
-// eslint-disable-next-line no-unused-vars
 function AllComponents(props) {
     const location = useLocation();
 

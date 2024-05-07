@@ -2,11 +2,11 @@
 
 .ownership-wrapper {
     @include grid($columns: 2, $size: 1fr);
-    @include wave($light, $light-l);
 
     width: 1500px;
     margin: 0 auto;
     padding-top: 30px;
+    padding: 50px 0;
 
     .left {
         text-align: left;
