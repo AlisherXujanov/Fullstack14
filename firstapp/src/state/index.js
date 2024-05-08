@@ -6,7 +6,8 @@ const initialState = {
     searchInput: '',
 
     input: "",
-    textarea: ""
+    textarea: "",
+    color: 'black',
 }
 
 

@@ -16,16 +16,22 @@ function Explore(props) {
 
             <div className="container">
                 <p>{state.input}</p>
-                <input type="text" 
-                    onChange={(e) => { state.dispatch({type:"changeInput", payload:e.target.value}) }}
+                <input type="text"
+                    onChange={(e) => { state.dispatch({ type: "changeInput", payload: e.target.value }) }}
                     value={state.input}
                 />
 
                 <p>{state.textarea}</p>
                 <textarea
-                    onChange={(e) => { state.dispatch({type:"changeTextarea", payload:e.target.value}) }}
+                    onChange={(e) => { state.dispatch({ type: "changeTextarea", payload: e.target.value }) }}
                     value={state.textarea}
                 ></textarea>
+
+                <p>Color</p>
+                <input type="color" style={{ height: '50px' }}
+                    onChange={(e) => { state.dispatch({ type: "changeColor", payload: e.target.value }) }}
+                    value={state.color}
+                />
             </div>
         </div>
     );

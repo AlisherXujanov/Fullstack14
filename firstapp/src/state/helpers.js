@@ -7,6 +7,8 @@ function globalReducer(state, action) {
             return { ...state, input: action.payload }
         case 'changeTextarea':
             return { ...state, textarea: action.payload }
+        case 'changeColor':
+            return { ...state, color: action.payload }
     }
 }
 
