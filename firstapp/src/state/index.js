@@ -4,6 +4,9 @@ const context = createContext()
 
 const initialState = {
     searchInput: '',
+
+    input: "",
+    textarea: ""
 }
 
 

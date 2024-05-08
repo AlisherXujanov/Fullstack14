@@ -23,6 +23,7 @@ function Navbar() {
                     <Searchbar />
                 </div>
                 <div className="right-nav">
+                    <Link onClick={activateLink} to="/create-nft">Create NFT</Link>
                     <Link onClick={activateLink} to="/about">About</Link>
                     <Link onClick={activateLink} to="/explore">Explore</Link>
                     <Link onClick={activateLink} to="/trending">Trending🔥</Link>

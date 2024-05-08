@@ -5,7 +5,8 @@ import bottomVector from '../../assets/icons/bottom.png'
 import AuthDefaultImg from "../../assets/icons/authors/default.png"
 import EtheriumImg from "../../assets/icons/trendingart/crypto-sign.png"
 
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { context } from "../../state"
 import "./style.scss"
 
 // RULES of Hooks!
@@ -21,6 +22,8 @@ import "./style.scss"
 
 function CreateNFT(props) {
     const [showOption, setShowOption] = useState(false)
+    const state = useContext(context)
+
 
     const [form, setForm] = useState({
         image: Salin5,
@@ -77,8 +80,10 @@ function CreateNFT(props) {
                             <input
                                 id="name-nft" type="text"
                                 placeholder="Name NFT"
-                                onChange={updateForm}
+                                // onChange={updateForm}
+                                onChange={(e) => {state.dispatch({type:"changeInput", payload:e.target.value})}}
                                 name='name'
+                                value={state.input}
                             />
                         </div>
                         <div>
@@ -94,8 +99,10 @@ function CreateNFT(props) {
                     <div className="form-control">
                         <label htmlFor="description-nft">Description</label>
                         <textarea placeholder="Description"
-                            onChange={updateForm}
+                            // onChange={updateForm}
+                            onChange={(e) => {state.dispatch({type:"changeTextarea", payload:e.target.value})}}
                             name="description"
+                            value={state.textarea}
                         ></textarea>
                     </div>
                     <div className="form-control">
@@ -135,7 +142,7 @@ function CreateNFT(props) {
                     </div>
                     <div className="content">
                         <div className="left">
-                            <b>{form.name}</b>
+                            <b>{state.input}</b>
                             <h2 className="author-info">
                                 <img src={AuthDefaultImg} alt="Auth Default Img" />
                                 {form.author}
