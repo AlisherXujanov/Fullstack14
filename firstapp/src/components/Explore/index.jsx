@@ -32,6 +32,16 @@ function Explore(props) {
                     onChange={(e) => { state.dispatch({ type: "changeColor", payload: e.target.value }) }}
                     value={state.color}
                 />
+                <input type="text" style={{ height: '50px' }}
+                onChange={(e) => { state.dispatch({ type: "changeInput", payload: e.target.value }) }}
+                value={state.input} />
+                <label htmlFor="range">{state.range}</label>
+                <input id="range" type="range"  style={{ height: '50px' }} 
+                onChange={(e) => { state.dispatch({ type: "changeRange", payload: e.target.value }) }}
+                value={state.range}/>
+                <input type="number" style={{ height: '50px' }}
+                onChange={(e) => { state.dispatch({ type: "changeNumber", payload: e.target.value })}}
+                value={state.input}/>
             </div>
         </div>
     );

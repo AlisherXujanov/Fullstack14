@@ -8,6 +8,8 @@ const initialState = {
     input: "",
     textarea: "",
     color: 'black',
+    input: "",
+    range: 0,
 }
 
 
