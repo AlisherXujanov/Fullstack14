@@ -4,7 +4,7 @@ import "./style.scss"
 
 function Card(props) {
     return (
-        <div className="card-wrapper">
+        <div className="card-wrapper-explore">
             <img src={props.img} alt={props.img} />
             <h3>{props.name}</h3>
             <div className="card-bottom">
