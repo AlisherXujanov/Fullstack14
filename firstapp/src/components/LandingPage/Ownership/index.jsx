@@ -12,17 +12,19 @@ function Ownership() {
     return (
         <div className="ownership-wrapper">
             <div className="left">
-                <small>WEB 3 NON-FUNGIBLE TOKENS</small>
-                <h1>Unlock <span style={{color: state.color}}>Unique</span> Digital Ownership with NFTs</h1>
+                <small>WEB {state.dateInput} NON-FUNGIBLE TOKENS</small>
+                <h1>{state.radioInput} <span style={{color: state.color, fontSize:state.rangeInput+'px'}}>Unique</span> Digital Ownership with NFTs</h1>
                 <p>Experience the Revolutionary World of Non-Fungible Tokens on Our Exclusive NFT Marketplace</p>
-                <button className="red-btn">
+                <button className="red-btn" 
+                    style={state.checkboxInput ? {display:"none"} : {display:"flex"}}
+                >
                     <span>💳</span>
                     Connect Wallet
                 </button>
             </div>
             <div className="right">
                 <div>
-                    <img src={Salin} className='Salin' width={"410px"} height={"450px"} />
+                    <img src={state.fileInput ? state.fileInput : Salin} className='Salin' width={"410px"} height={"450px"} />
                     <img src={Ball1} className='ball small' />
                     <img src={Ball2} className='ball big' />
                 </div>

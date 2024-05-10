@@ -41,4 +41,25 @@
             height: 200px;
         }
     }
+
+    table {
+        margin-top: 20px;
+        @include flex(column);
+
+        td {
+            padding: 20px 50px;
+            @include flex();
+
+            input {
+                padding: 5px 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    fieldset {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
