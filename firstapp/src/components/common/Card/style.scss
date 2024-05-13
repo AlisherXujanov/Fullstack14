@@ -1,10 +1,11 @@
 @import "../../../assets/styles/settings";
-.card-wrapper{
+.card-wrapper-explore{
     background-color: $gray-l;
     padding: 10px;
     height: 375px;
     &>img{
         width: 100%;
+        height: 69%;
         margin-bottom: 15px;
     }
     .card-bottom{
