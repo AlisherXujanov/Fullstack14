@@ -1,3 +1,19 @@
+# First steps
+- RU: Первые шаги
+
+1. Clone  ->  `git clone 'url'`
+2. - cd to the project folder  ->  `cd 'project-folder'`
+   - `code .`
+   - `cd firstapp`
+   - `npm run dev`
+   
+1. Клонировать  ->  `git clone 'url'`
+2. - перейти в папку проекта  ->  `cd 'project-folder'`
+   - `code .`
+   - `cd firstapp`
+   - `npm run dev`
+
+
 # How to use Git and add new feature to the project
 - RU: Как использовать Git и добавить новую функцию в проект
 
