@@ -1,32 +1,29 @@
 import { useState } from 'react'
 import './themeSwitcher.scss'
+import { context } from '../../state'
+import { useContext } from 'react'
 
 
 function ThemeSwitcher() {
-    const [theme, setTheme] = useState('light')
+    // const [theme, setTheme] = useState('light')
+    const state = useContext(context)
 
 
     function switcher(e) {
-        if (theme === 'light') {
-            setTheme('dark')
-        } else {
-            setTheme('light')
-        }
+        state.dispatch({type: 'changeTheme', payload: !state.darkTheme})
     }
 
 
     return (
-        <div className={theme}>
-            <div className="theme-switcher">
-                <span className='icon'>☀️</span>
+        <div className="theme-switcher">
+            <span className='icon'>☀️</span>
 
-                <div onClick={switcher} className="switcher" >
-                    <input type="checkbox" />
-                    <span className='circle'></span>
-                </div>
-
-                <span className='icon'>🌙</span>
+            <div onClick={switcher} className="switcher" >
+                <input type="checkbox" />
+                <span className='circle'></span>
             </div>
+
+            <span className='icon'>🌙</span>
         </div>
     );
 }

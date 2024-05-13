@@ -24,6 +24,8 @@ import { createContext } from 'react'
 const context = createContext()
 
 const initialState = {
+    darkTheme: false,
+
     searchInput: '',
     input: "",
     textarea: "",
