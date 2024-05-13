@@ -1,10 +1,15 @@
 import Galochka from "../../../assets/icons/trendingart/galochka.png"
 import EtheriumImg from "../../../assets/icons/trendingart/crypto-sign.png"
 import "./style.scss"
+import { context } from '../../../state'
+import { useContext } from 'react'
+
 
 function Card(props) {
+    const state = useContext(context)
+
     return (
-        <div className="card-wrapper-explore">
+        <div className={state.darkTheme ? "card-wrapper-explore dark" : "card-wrapper-explore"}>
             <img src={props.img} alt={props.img} />
             <h3>{props.name}</h3>
             <div className="card-bottom">

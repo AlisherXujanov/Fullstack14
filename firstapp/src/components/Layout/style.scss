@@ -12,6 +12,9 @@
         z-index: -1;
         @include wave($light, $light-l);
     }
+    .wave-effect.dark {
+        @include wave($themeDark-l, $themeDark-d, 45deg);
+    }
 
     #outlet {
         min-height: 450px;

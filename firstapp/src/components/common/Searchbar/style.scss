@@ -26,3 +26,13 @@
         }
     }
 }
+
+.search-input.dark {
+    background-color: $dark;
+    color: snow;
+
+    input {
+        background-color: $dark;
+        color: snow;
+    }
+}

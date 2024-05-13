@@ -1,7 +1,6 @@
 import Logo from "../common/Logo"
 import ThemeSwitcher from './ThemeSwitcher.jsx'
 import "./style.scss"
-import { useState } from 'react'
 
 function Footer(props) {
     return (

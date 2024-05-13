@@ -1,5 +1,4 @@
-$dark: #151515;
-$red: linear-gradient(to right, #ff56bb, #ff8f77);
+@import "../../assets/styles/settings";
 
 .theme-switcher {
     display: flex;
@@ -43,31 +42,5 @@ $red: linear-gradient(to right, #ff56bb, #ff8f77);
                 left: 21px;
             }
         }
-    }
-}
-
-.dark {
-    background-color: gray;
-    color: white;
-}
-.light {
-    background-color: white;
-    color: $dark;
-}
-
-.container {
-    button {
-        color: black;
-        transition: 0.3s;
-        &:active {
-            transform: scale(0.6);
-        }
-    }
-    span {
-        padding: 10px;
-        background-color: #333;
-        color: snow;
-        margin: 0 10px;
-        border-radius: 50%;
     }
 }

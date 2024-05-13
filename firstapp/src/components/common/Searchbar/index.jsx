@@ -14,7 +14,7 @@ function Searchbar(props) {
     }
 
     return (
-        <div className="search-input">
+        <div className={state.darkTheme ? "search-input dark" : "search-input"}>
             <div className="left">
                 <img src={SearchIcon} alt="Search" />
             </div>
