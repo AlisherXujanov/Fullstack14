@@ -1,0 +1,29 @@
+.our-team {
+    h1 {
+        text-align: center;
+        padding: 150px 0 70px 0;
+    }
+
+    .teams {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        margin: 50px 100px;
+
+        .team {
+            width: 90px;
+            height: 150px;
+            text-align: center;
+
+            div {
+                padding-top: 15px;
+                padding-right: 35px;
+                width: 200px;
+            }
+
+            .position {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+}

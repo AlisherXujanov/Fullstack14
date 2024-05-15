@@ -1,0 +1,15 @@
+.partners {
+    
+    .partner {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 0 150px;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 450px 100px 100px 100px;
+    }
+    
+}

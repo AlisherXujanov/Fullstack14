@@ -1,5 +1,7 @@
-import AboutPic from "../../assets/imgs/Salin2.png"
-
+import AboutPic from "../../assets/imgs/about/pic.png"
+import Music from "../../assets/icons/AboutPage/music.png"
+import Player from "../../assets/icons/AboutPage/player.png"
+import Paint from "../../assets/icons/AboutPage/paint.png"
 
 function AboutCompany(props) {
     return (
@@ -10,7 +12,10 @@ function AboutCompany(props) {
                 <p>We are a cutting-edge company focused on the creation, promotion, and sale of non-fungible tokens (NFTs). Our marketplace offers a wide range of NFTs, from digital art and collectibles to gaming items and virtual real estate.</p>
             </div>
             <div className="right">
-                <img src={AboutPic} alt="" />
+                <img className="about-pic" src={AboutPic} alt="" />
+                <div className="music"><img src={Music} alt="" /></div>
+                <div className="player"><img src={Player} alt="" /></div>
+                <div className="paint"><img src={Paint} alt="" /></div>
             </div>
         </div>
     );
