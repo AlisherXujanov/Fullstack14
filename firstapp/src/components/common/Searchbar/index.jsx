@@ -5,6 +5,7 @@ import { context } from "../../../state"
 
 function Searchbar(props) {
     const state = useContext(context)
+    const placeholder = props.placeholder || "Search"
 
     function changeInput(e) {
         state.dispatch({
@@ -19,7 +20,9 @@ function Searchbar(props) {
                 <img src={SearchIcon} alt="Search" />
             </div>
             <div className="right">
-                <input type="search" placeholder="Search"
+                <input 
+                    style={{width:"100%"}}
+                    type="search" placeholder={placeholder}
                     value={state.searchInput}
                     onChange={changeInput}
                 />

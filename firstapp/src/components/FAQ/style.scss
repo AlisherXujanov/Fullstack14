@@ -1,0 +1,40 @@
+@import "../../assets/styles/settings";
+
+.faq-wrapper {
+    text-align: center;
+
+    .intro {
+        color: $gray;
+        letter-spacing: 5px;
+    }
+    p {
+        padding: 20px 0;
+    }
+    .subtitle {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .searchbar-wrapper {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .buttons {
+        margin: 20px 50px;
+
+        .btn {
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            color: $gray;
+            font-weight: bold;
+            background-color: transparent;
+            padding: 10px 30px;
+        }
+        .btn.active {
+            background: $red;
+            color: snow;
+            font-weight: normal;
+        }
+    }
+}
