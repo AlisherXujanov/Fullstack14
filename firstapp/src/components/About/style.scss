@@ -60,3 +60,19 @@
         }
     }
 }
+
+.about-page.dark {
+    section {
+        background-color: black;
+        color: snow;
+        .about-company {
+            padding: 100px 0;
+            @include wave(black, black, 45deg);
+            background: linear-gradient(black, $themeDark-l);
+        }
+        .joining {
+            background-color: $themeDark-l;
+        }
+        padding-bottom: 20px;
+    }
+}

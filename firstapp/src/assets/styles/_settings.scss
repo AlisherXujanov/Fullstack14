@@ -76,7 +76,7 @@ $large: 1440px;
     @if ($deg) {
         background: linear-gradient($deg, $color1, $color2, $color1);
     } @else {
-        background: linear-gradient(to bottom, $color1, $color2);
+        background: linear-gradient(to bottom, $color2, $color1, $color2);
     }
 
     clip-path: polygon(100% 0, 100% 94%, 88% 98%, 73% 100%, 52% 97%, 37% 91%, 24% 86%, 11% 83%, 0 84%, 0 1%);

@@ -8,7 +8,6 @@
     position: relative;
 
     .distro {
-        color: $light;
         text-align: center;
         padding: 70px 0 70px 0;
     }
@@ -18,6 +17,7 @@
         width: 85%;
         height: 730px;
         background-color: $gray-l;
+        color: black;
         margin: 0 120px;
         border-radius: 25px;
 
@@ -29,5 +29,4 @@
             height: 124px;
         }
     }
-
 }

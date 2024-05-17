@@ -4,6 +4,7 @@ import Player from "../../assets/icons/AboutPage/player.png"
 import Paint from "../../assets/icons/AboutPage/paint.png"
 
 function AboutCompany(props) {
+
     return (
         <div className="about-company">
             <div className="left">
