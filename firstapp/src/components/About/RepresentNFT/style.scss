@@ -1,0 +1,41 @@
+.represent {
+    .represent-NFT {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        div:first-child {
+            img {
+                width: 615px;
+                height: 649px;
+            }
+        }
+
+        div:last-child {
+            width: 428px;
+            margin-top: 220px;
+
+            h1 {
+                width: 360px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .collections {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        margin: 50px 100px;
+
+        .collection {
+            width: 90px;
+            height: 150px;
+            text-align: center;
+            
+            .number {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+}
