@@ -12,10 +12,10 @@ function AboutCompany(props) {
                 <p>We are a cutting-edge company focused on the creation, promotion, and sale of non-fungible tokens (NFTs). Our marketplace offers a wide range of NFTs, from digital art and collectibles to gaming items and virtual real estate.</p>
             </div>
             <div className="right">
-                <img className="about-pic" src={AboutPic} alt="" />
-                <div className="music"><img src={Music} alt="" /></div>
-                <div className="player"><img src={Player} alt="" /></div>
-                <div className="paint"><img src={Paint} alt="" /></div>
+                <img className="about-pic" src={AboutPic} alt="About picture" />
+                <img className="music-pic" src={Music}  />
+                <img className="player-pic" src={Player}  />
+                <img className="paint-pic" src={Paint}  />
             </div>
         </div>
     );

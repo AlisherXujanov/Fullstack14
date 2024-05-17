@@ -1,4 +1,7 @@
+@import "../../assets/styles/settings";
+
 .about-page {
+    overflow: hidden;
     padding: 50px 0;
 
     section {
@@ -22,52 +25,37 @@
                 margin-top: 50px;
             }
             .right {
-                .about-pic {
-                    position: relative;
-                    left: 120px;
-                    width: 400px;
-                    height: 450px;
-                }
+                width: 450px;
+                position: relative;
+                left: 20%;
+                @include flex();
 
-                .music {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: bisque;
-                    width: 61px;
-                    height: 61px;
+                img:not(img.about-pic) {
+                    background-color: $light;
                     border-radius: 50%;
                     position: absolute;
-                    right: 520px;
-                    top: 170px;
                 }
-
-                .player {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: bisque;
+                .player-pic {
+                    padding: 10px;
+                    width: 45px;
+                    height: 45px;
+                    right: -20px;
+                    top: 50px;
+                }
+                .music-pic {
+                    padding: 15px;
                     width: 55px;
                     height: 55px;
-                    border-radius: 50%;
-                    position: absolute;
-                    right: 240px;
-                    top: 270px;
+                    top: -25px;
+                    left: 50px;
                 }
-
-                .paint {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: bisque;
-                    width: 93px;
-                    height: 93px;
-                    border-radius: 50%;
-                    position: absolute;
-                    right: 630px;
-                    top: 470px;
+                .paint-pic {
+                    padding: 20px;
+                    width: 85px;
+                    height: 85px;
+                    left: -45px;
+                    bottom: 80px;
                 }
-
             }
         }
     }
