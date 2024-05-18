@@ -17,6 +17,31 @@ function FAQ() {
                 <button className='btn'>NFT Product</button>
                 <button className='btn'>Payment</button>
             </div>
+
+            <div className='main-1'>
+                <div className="div-p">
+                    <p>What is an NFT marketplace? </p>
+                    <p className='lefts'>⬇️</p>
+                </div>
+                <div className="main">
+                    <p className='p-1'>An NFT marketplace is a platform that allows users to buy, sell, and trade non-fungible tokens (NFTs). NFTs are unique digital assets that can represent anything from artwork and collectibles to in-game items and virtual real estate.</p>
+
+                    <div className="div-p">
+                        <p>How does buying an NFT work?</p>
+                        <p className='rights'>➡️</p>
+                    </div>
+                    <div className="div-p">
+                        <p>What are the benefits of owning an NFT?</p>
+                        <p className='rights'>➡️</p>
+                    </div>
+                    <div className="div-p">
+                        <p>Are there any risks associated with buying NFTs?</p>
+                        <p className='rights'>➡️</p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     );
 }
