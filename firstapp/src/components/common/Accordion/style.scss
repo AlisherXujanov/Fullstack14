@@ -9,9 +9,14 @@
 
 .accordion-wrapper {
     width: 100%;
+    margin-bottom: 10px;
 
     .accordion-item {
         border-radius: 50px;
+
+        * {
+            transition: 0.5s;
+        }
 
         .accordion-title {
             border-radius: 50px;
@@ -25,13 +30,16 @@
         }
 
         .accordion-content-opened {
-            padding: 20px 35px;
-            background-color: transparent;
-            height: auto;
+            padding: 10px 35px;
+            border-radius: 50px;
+            max-height: auto;
         }
         .accordion-content-closed {
-            height: 10px;
-            opacity: 0;
+            max-height: 0;
+        }
+        .content {
+            margin-top: 10px;
+            overflow: hidden;
         }
     }
 }

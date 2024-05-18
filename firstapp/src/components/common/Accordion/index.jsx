@@ -4,7 +4,8 @@ import { useState } from "react"
 function Accordion(props) {
     const [isActive, setIsActive] = useState(false)
 
-    function toggleAccordion() {
+    function toggleAccordion(e) {
+        e.preventDefault()
         setIsActive(!isActive)
     }
 
@@ -17,7 +18,7 @@ function Accordion(props) {
                         style={isActive ? {transform: "rotate(90deg)"} : {transform: "rotate(0deg)"}}
                     >➡️</p>
                 </div>
-                <div className={ isActive ? "accordion-content-opened" : "accordion-content-closed"}>
+                <div className={ isActive ? "accordion-content-opened content" : "accordion-content-closed content"}>
                     <p>{props.content}</p>
                 </div>
             </div>
