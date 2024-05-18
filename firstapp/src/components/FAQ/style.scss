@@ -1,5 +1,6 @@
 @import "../../assets/styles/settings";
 
+
 .faq-wrapper {
     text-align: center;
 
@@ -36,5 +37,43 @@
             color: snow;
             font-weight: normal;
         }
+    }
+    .div-p {
+        background-color: #ffffff;
+        width: 810px;
+        height: 62px;
+        top: 736px;
+        left: 395px;
+        border-radius: 16px;
+        margin: 20px auto;
+        box-shadow: 10px 10px 30px 1px black;
+        p {
+            float: left;
+            padding: 19px 0 0 40px;
+        }
+        .lefts {
+            float: right;
+            padding: 14px 20px 0 0;
+        }
+        .rights {
+            float: right;
+            padding: 14px 20px 0 0;
+        }
+    }
+    .main-1 {
+        margin: 70px;
+    }
+
+    .p-1 {
+        width: 700px;
+        height: 130px;
+        right: -500px;
+        margin: 0 auto;
+    }
+    .lefts {
+        float: right;
+    }
+    .rights {
+        float: left;
     }
 }
