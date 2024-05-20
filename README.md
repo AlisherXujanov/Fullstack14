@@ -51,3 +51,8 @@ git push
 ## NOTE:
 - Do not use the same branch after it has been merged. Create a new branch for the new feature.
 - RU: Не используйте одну и ту же ветку после того, как она была объединена. Создайте новую ветку для новой функции.
+
+```bash
+git checkout main
+```
+чтобы переключиться на ветку main
