@@ -5,6 +5,7 @@ import About from "./About"
 import Explore from "./Explore"
 import CreateNFT from './CreateNFT'
 import FAQ from './FAQ'
+import Trending from './Trending'
 import Page404 from './Page404'
 
 function AllComponents(props) {
@@ -18,6 +19,7 @@ function AllComponents(props) {
                     <Route path="/about" element={<About/>} />
                     <Route path="/create-nft" element={<CreateNFT/>} />
                     <Route path="/explore" element={<Explore/>} />
+                    <Route path="/trending" element={<Trending/>} />
                     <Route path="/FAQ" element={<FAQ/>} />
                     <Route path="*" element={<Page404 />} />
                     {/* https://www.youtube.com/...

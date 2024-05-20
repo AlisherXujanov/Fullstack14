@@ -1,0 +1,27 @@
+.trending-page-wrapper {
+    width: 800px;
+    margin: 50px auto;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    h1 {
+        margin-bottom: 50px;
+    }
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: black;
+        color: snow;
+        border-radius: 10px;
+        margin: 0 50px;
+        &:active {
+            transform: scale(0.7);
+        }
+    }
+    .btn.inc {
+        background-color: green;
+    }
+    .btn.dec {
+        background-color: red;
+    }
+}
