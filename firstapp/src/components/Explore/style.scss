@@ -15,51 +15,14 @@
         }
     }
 
-    .container {
-        margin-top: 70px;
-        @include flex(column);
+    .all-nfts {
+        margin: 50px 0;
+        display: grid;
+        @include grid($gap: 50px, $columns: 4, $size: 1fr, $align: center, $justify: center);
 
-        input,
-        textarea {
-            border-radius: 10px;
-            background-color: $gray-t;
-            padding: 10px 20px;
-            border: none;
-            outline: none;
-            width: 50%;
-            display: block;
-            margin: 0 auto;
-            color: gray;
-
-            &:focus {
-                background-color: $gray-l;
-                color: black;
-            }
+        .nft-wrapper {
+            padding: 10px;
+            background-color: $light;
         }
-
-        textarea {
-            height: 200px;
-        }
-    }
-
-    table {
-        margin-top: 20px;
-        @include flex(column);
-
-        td {
-            padding: 20px 50px;
-            @include flex();
-
-            input {
-                padding: 5px 10px;
-                margin-left: 10px;
-            }
-        }
-    }
-
-    fieldset {
-        width: 50%;
-        margin: 0 auto;
-        padding: 20px;
     }
 }
