@@ -25,6 +25,7 @@ const context = createContext()
 
 const initialState = {
     darkTheme: false,
+    showModal: false,
 
     searchInput: '',
     input: "",

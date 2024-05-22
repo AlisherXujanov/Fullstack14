@@ -10,8 +10,7 @@ function Layout(props) {
 
     return (
         <div className="layout">
-            <div className={state.darkTheme ? "wave-effect dark" : "wave-effect"}
-            ></div>
+            <div className={state.darkTheme ? "wave-effect dark" : "wave-effect"}></div>
 
             <Navbar />
 
