@@ -15,11 +15,15 @@ import { memo } from 'react'
 //        2. rejected  =>  отклонено
 //        3. pending   =>  ожидание
 // -------------------------------------------------------
+// let data = {
+//     name: "John",
+//     age: 30
+// };
 // fetch   ->  
 //     1.  fetch(url)  ->  отправляет GET запрос на сервер
 //          if resolved  ->  если запрос выполнен успешно то ПОЛУЧАЕМ данных
 //          if rejected  ->  если запрос выполнен с ошибкой то ПОЛУЧАЕМ ошибку
-//     2.  fetch(url, {method: 'POST', body: JSON.stringify(data)})  ->  отправляет POST запрос на сервер
+//     2.  fetch(url, {method:'POST',  body:JSON.stringify(data)})  ->  отправляет POST запрос на сервер
 //          --------------------------------------------------
 //          EXAMPLE with JSON:
 //          let x = {...}
