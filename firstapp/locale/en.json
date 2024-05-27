@@ -10,7 +10,7 @@
             "faq": "FAQ"
         },
         "ownership": {
-            "intro": "WEB NON-FUNGIBLE TOKENS",
+            "intro": "WEB NON-FUNGIBLE {{ tokens }}",
             "h1": "Unlock Unique Digital Ownership with NFTs",
             "h2": "Sign with your wallet!",
             "subtitle": "Sign Wallet NFT, the secure digital storage for unique assets, take a step towards the future",

@@ -1,0 +1,26 @@
+@import "../../../assets/styles/settings";
+
+.email-form-wrapper {
+    text-align: center;
+    form {
+        @include flex(column);
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+
+
+        input, textarea {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            background-color: green;
+            color: snow;
+        }
+    }
+}

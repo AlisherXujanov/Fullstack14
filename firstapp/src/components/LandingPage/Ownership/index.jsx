@@ -22,7 +22,7 @@ function Ownership() {
                     <button className='green-btn'>{ t("ownership.connect-w") } C</button>
                 </Modal>
 
-                <small> { t("ownership.intro") } {state.dateInput}</small>
+                <small> { t("ownership.intro", {"tokens": "..."}) } {state.dateInput}</small>
                 <h1>{ t("ownership.h1") } </h1>
                 <p> { t("ownership.paragraph") }</p>
                 <button className="red-btn"

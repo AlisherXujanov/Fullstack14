@@ -1,6 +1,7 @@
 import Logo from "../common/Logo"
 import ThemeSwitcher from './ThemeSwitcher.jsx'
 import "./style.scss"
+import EmailForm from "../common/Email"
 
 function Footer(props) {
     return (
@@ -18,6 +19,7 @@ function Footer(props) {
                 </p>
             </div>
             <div className="right">
+                <EmailForm />
             </div>
         </footer>
     );
