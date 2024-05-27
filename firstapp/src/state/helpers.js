@@ -5,6 +5,11 @@ function globalReducer(state, action) {
             return {...state, darkTheme: action.payload }
         case 'toggleModal':
             return {...state, showModal: action.payload }
+        case 'changeLanguage':
+            // payload  =>  en  ||  ru
+            return {...state, currentLanguage: action.payload }
+
+
         case 'changeSearchbar':
             return {...state, searchInput: action.payload }
         case 'changeInput':

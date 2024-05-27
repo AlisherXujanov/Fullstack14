@@ -1,0 +1,21 @@
+{
+    "translation": {
+        "language_name": "English",
+        "name": "Translated Value",
+        "navbar": {
+            "create": "Create NFT",
+            "about": "About",
+            "explore": "Explore",
+            "trending": "Trending",
+            "faq": "FAQ"
+        },
+        "ownership": {
+            "intro": "WEB NON-FUNGIBLE TOKENS",
+            "h1": "Unlock Unique Digital Ownership with NFTs",
+            "h2": "Sign with your wallet!",
+            "subtitle": "Sign Wallet NFT, the secure digital storage for unique assets, take a step towards the future",
+            "paragraph": "Experience the Revolutionary World of Non-Fungible Tokens on Our Exclusive NFT Marketplace",
+            "connect-w": "Connect Wallet"
+        }
+    }
+}

@@ -26,6 +26,7 @@ const context = createContext()
 const initialState = {
     darkTheme: false,
     showModal: false,
+    currentLanguage: 'en',
 
     searchInput: '',
     input: "",
@@ -36,8 +37,6 @@ const initialState = {
     dateInput: '',
     checkboxInput: '',
     fileInput: '',
-
-    radioInput: 'Unlock'
 }
 
 
