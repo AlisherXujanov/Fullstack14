@@ -9,7 +9,7 @@ function Email(props) {
     const submit = (e) => {
         e.preventDefault() // prevents the page from reloading when you hit “Send”
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID-')
+        emailjs.sendForm('service_8aytxhp', 'template_dbx4qji', form.current, 'mbcCG18ZiPltCRfB-')
             .then((result) => {
                 alert('Message Sent', result.text)
                 // show the user a success message
@@ -26,7 +26,7 @@ function Email(props) {
             <h1>Send Email</h1>
 
             <form ref={form} onSubmit={(e) => submit(e)}>
-                <input type="text" hidden value='напишите своё имя' name='from_name' />
+                <input type="text" placeholder='Напишите своё имя' name='from_name' />
 
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input type="email" id="exampleInputEmail1"

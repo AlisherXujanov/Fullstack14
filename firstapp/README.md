@@ -1,8 +1,35 @@
-# React + Vite
+1. For creating the new app from scratch we can use:
+```bash
+npx create-vite your-project-name --template react 
+```
+- IF PROBLEM (npm uninstall -g create-react-app && install)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Create routers
+```bash
+npm i react-router-dom@latest
+```
 
-Currently, two official plugins are available:
+```javascript
+import { BrowserRouter } from 'react-router-dom'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+// Link  ->  works just like the anchor tag 
+// <a href='...'>  ===  <Link to="..." />
+
+function App() {
+    return (
+        <BrowserRouter>
+            <Routes location={location} key={location.pathname}>
+                <Route path='/' element={<Layout/>}>
+                    <Route index element={<LandingPage/>} />
+                    <Route path="/about" element={<About/>} />
+                    <Route path="*" element={<Page404 />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    )
+}
+```
+
+
+3. Create all other components that are required for your project
