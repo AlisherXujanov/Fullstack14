@@ -15,7 +15,7 @@ function FAQ() {
             </div>
 
             <div className="buttons">
-                <button className='btn active'>General</button>
+                <button className='btn'>General</button>
                 <button className='btn'>NFT Product</button>
                 <button className='btn'>Payment</button>
             </div>

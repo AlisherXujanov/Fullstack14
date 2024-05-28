@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './themeSwitcher.scss'
 import { context } from '../../state'
 import { useContext } from 'react'

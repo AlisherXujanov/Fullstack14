@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './style.scss'
 import { useState } from 'react'
 import Test from './Test.jsx'

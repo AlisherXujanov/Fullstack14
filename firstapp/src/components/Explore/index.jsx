@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./style.scss"
 import Searchbar from "../common/Searchbar";
 import { context } from '../../state'

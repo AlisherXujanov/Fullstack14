@@ -1,8 +1,6 @@
 @import "../../assets/styles/settings";
-
 .faq-wrapper {
     text-align: center;
-
     .intro {
         color: $gray;
         letter-spacing: 5px;
@@ -18,10 +16,8 @@
         width: 450px;
         margin: 0 auto;
     }
-
     .buttons {
         margin: 20px 50px;
-
         .btn {
             outline: none;
             border: none;
@@ -31,13 +27,12 @@
             background-color: transparent;
             padding: 10px 30px;
         }
-        .btn.active {
-            background: $red;
+        .btn:focus {
             color: snow;
+            background: $red;
             font-weight: normal;
         }
     }
-
     section.accordions {
         width: 600px;
         margin: 50px auto;

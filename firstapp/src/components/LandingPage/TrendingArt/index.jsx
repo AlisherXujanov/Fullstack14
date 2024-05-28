@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Card1 from "../../../assets/imgs/trendingart/Salin1.png"
 import Card2 from "../../../assets/imgs/trendingart/Salin2.png"
 import Card3 from "../../../assets/imgs/trendingart/Salin3.png"
