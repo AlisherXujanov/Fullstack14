@@ -2,6 +2,8 @@ import "./style.scss"
 import { useRef } from "react"
 import emailjs from '@emailjs/browser'
 
+import { toast } from 'react-toastify';
+
 function Email(props) {
 
     const form = useRef() // reference to the form element
@@ -11,10 +13,12 @@ function Email(props) {
 
         emailjs.sendForm('service_8aytxhp', 'template_dbx4qji', form.current, 'mbcCG18ZiPltCRfB-')
             .then((result) => {
-                alert('Message Sent', result.text)
+                toast.success("Message Sent", {theme: "dark"})
+                // alert('Message Sent', result.text)
                 // show the user a success message
             }, (error) => {
-                alert('An error occurred, Please try again', error.text)
+                toast.error("An error occurred, Please try again", {theme: "dark"})
+                // alert('An error occurred, Please try again', error.text)
                 // show the user an error
             })
 
