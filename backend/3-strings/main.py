@@ -19,11 +19,11 @@
 # x[start:end:step]    -> in Python
 # ----------------------------------
 # x = "Hello World"
-# z = x[2]   # Only one letter
-# z = x[2:7] # From 2 to 7
-# z = x[2:10:2]  # From 2 to 10 with step 2 (nth-child(2n))
-# z = x[-8:-2]     # From -8 to -2
-# z = x[::-1]     # Reverse
+# z = x[2]          # Only one letter
+# z = x[2:7]        # From 2 to 7
+# z = x[2:10:2]     # From 2 to 10 with step 2 (nth-child(2n))
+# z = x[-8:-2]      # From -8 to -2
+# z = x[::-1]       # Reverse
 # print("Result: ", z)
 # ==================================
 # ==================================
@@ -143,7 +143,17 @@ import re  # regular expressions
 
 # print("6:00:00".zfill(8))  # 06:00:00
 # print("12:00:00".zfill(8))  # 12:00:00
+# ==================================
+# ==================================
+# Repeat
 
+# in JS
+# "hello".repeat(3)  =>  hellohellohello
+
+# in Python
+# "hello" * 3  =>  hellohellohello
+# ==================================
+# ==================================
 
 
 
