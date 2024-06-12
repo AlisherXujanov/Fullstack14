@@ -61,7 +61,56 @@ def change_vowels_into_symbols(sentence:str, symbol:str="$") -> str:
 text = "This is test text of vowels"
 text2 = "Hello world"
 text3 = "Cyber Academy of Python"
-print(change_vowels_into_symbols(text))
-print(change_vowels_into_symbols(text2))
-print(change_vowels_into_symbols(text3))
+# print(change_vowels_into_symbols(text))
+# print(change_vowels_into_symbols(text2))
+# print(change_vowels_into_symbols(text3))
 
+# =================================================
+text = "This is test text of universe"
+def change_last_letter_to_upper(sentence:str) -> str:
+    ...
+
+
+# =================================================
+def factorial(num:int) -> int:
+    if num == 1:
+        return 1 
+    return num * factorial(num-1)
+    # 5 * 4 * 3 * 2 * 1
+
+# print(factorial(5))  # 120
+# print(factorial(10)) # 3628800
+
+# =================================================
+# HOMEWORK
+# 1. FIBONACCI with recursion and for loop
+# 0, 1
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ...
+# def fibonacci(n:int) -> int:
+#     """Upto n-th element"""
+#     pass
+
+# fibonacci(50)  # 1, 2, 3, 5, 8, 13, 21, 34
+# fibonacci(100) # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
+# =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+# 2. 
+#         -- 5 --
+#    *             *
+#    **           **
+#    ***         ***
+#    ****       ****
+#    *****     *****
+# --------------------------
+#    *****     *****
+#    ****       ****
+#    ***         ***
+#    **           **
+#    *             *
+# --------------------------
+# =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+# 3. You have a text that can contain same latters in one place. 
+#    ex: 
+#       "Hello world"  => ll
+#       "moon"         => oo
+#       "Cyber"        => ""
+# 
