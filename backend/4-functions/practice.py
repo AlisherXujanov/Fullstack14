@@ -46,3 +46,22 @@ def repeat_first_letter_of_last_word(sentence: str) -> str:
 
 # r = repeat_first_letter_of_last_word("This is test universe")
 # print(r)
+
+# =================================================
+def change_vowels_into_symbols(sentence:str, symbol:str="$") -> str:
+    vowels = "auioe"
+    result = ""
+    for letter in sentence:
+        if letter.lower() in vowels:
+            result += symbol
+        else:
+            result += letter
+    return result
+
+text = "This is test text of vowels"
+text2 = "Hello world"
+text3 = "Cyber Academy of Python"
+print(change_vowels_into_symbols(text))
+print(change_vowels_into_symbols(text2))
+print(change_vowels_into_symbols(text3))
+
