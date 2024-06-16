@@ -47,6 +47,15 @@
 #          """
 #    ПРИМЕЧАНИЕ: Используйте math.random(), чтобы получить выбор компьютера.
 # --------------------------------------------------------------------------------
-#
-
-
+# 5. Create a loop that takes every letter from any kind of string and counts
+# only vowels and consonants. 
+# RU: Создайте цикл, который берет каждую букву из любой строки и считает
+# только гласные и согласные.
+# --------------------------------------------------------------------------------
+# ДЛЯ ОЙБЕКА
+# Create a function that asks 2 params from a user.
+# 1-st param is a string
+# 2-nd param is a number
+# The function then should repeat each vowel letter in the string by the number
+# EX:  text, 3   ->   teeext
+#      world, 4  ->   woooorld
