@@ -1,194 +1,187 @@
-# 1. Write a function to count the occurrences of each character in a string.
-# RU: Напишите функцию для подсчета вхождений каждого символа в строке.
-# def count_occurences(string) -> dict: # подсчитать_вхождения
-#     text = [string]
-#     for x in text:
-#         r = sum(x)
+# =============== BEGINNER LEVEL ===============
+# 1. Создайте объект под названием car с следующими
+#   свойствами: brand, model, color, year.
+#   Выведите каждое свойство в консоль.
 
-# word = ["shalala"]
-# print(count_occurences(word))
-# count_occurences("abaaa")
-# {'a': 4,  "b": 1}
-print("Task - 1: I cannot do it")
-
-# =================================================================================
-# =================================================================================
-# 2. Write a Python script to concatenate the following dictionaries to create a new one.
-# RU: Напишите скрипт Python для объединения следующих словарей для создания нового.
-
-# def concatenate_dictionaries(*args) -> dict:
-# x = {'a': 1, 'b': 2}
-# x2 = {'c': 3, 'd': 4}
-# x3 = {'e': 5, 'f': 6}
-# x4 = {'g': 7, 'h': 8}
-# concatenate_dictionaries(x, x2, x3, x4)
-# {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8}
-
-x = {'a': 1, 'b': 2}
-x.update({
-    'c': 3,
-    'd': 4,
-    'e': 5,
-    'f': 6,
-    'g': 7,
-    'h': 8
-})
-print(x)
-
-# =================================================================================
-# =================================================================================
-# 3. Write a Python script to check whether a given key already exists in a dictionary.
-# RU: Напишите скрипт Python для проверки, существует ли данный ключ уже в словаре.
-
-# def check_key(dict, key):
-#     ...
-# check_key({"a": 1, "b": 2}, "a")  # True
-
-dict = {"a": 1, "b": 2}
-print(dict.get("c", False))
-
-# =================================================================================
-# =================================================================================
-# 4. Write a Python program to iterate over dictionaries using for loops.
-# RU: Напишите программу Python для итерации по словарям с помощью циклов for.
+import random
 
 
-def iterate_over_dict(dict):
-    ...
+def car(dict) -> dict:
+    for key, value in dict.items():
+        print(f"{key} : {value}")
 
 
-iterate_over_dict({'name': 'John',  'age': 26,  'address': 'London'})
+obj = {"brand": "Mercedes", "model": "Mercedes-Benz G-класс",
+       "color": "Black", "year": "1979"}
+# print("Task - 1:", car(obj))
 
-# name: John
-# age: 26
-# address: London
-
-# =================================================================================
-# =================================================================================
-# 5. Write a Python script to print a dictionary where the keys are numbers
-# between 1 and 15 (both included) and the values are square of keys.
-# RU: Напишите скрипт Python для печати словаря, где ключи - числа
-# от 1 до n (оба включены), а значения - квадрат ключей.
-# ex: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+# --------------------------------------------------------------------------------------------------
+# 2. У вас есть объект, получите длину ключей и значений объекта.
 
 
-# def generate_dict(n):
-#     x = dict(n = n**n)
-#     print(x)
-
-# z = 5
-# generate_dict(z)
-# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
-print("Task - 5: I cannot do it")
-# =================================================================================
-# =================================================================================
-# 6. Write a Python program to sum all the items in a dictionary.
-# !!! NOTE: values could be int or str, if str, convert to int
-# But, if the value is not convertible to int, skip it.
-# ----------------
-# RU: Напишите программу Python для суммирования всех элементов в словаре.
-# !!! ПРИМЕЧАНИЕ: значения могут быть int или str, если str, преобразуйте в int
-# Но, если значение нельзя преобразовать в int, пропустите его.
-# ----------------
-# ex:  x =  {...: "10", ...: 'qwe', ...: 5}  => 15
-# ----------------
+def lengths(object: dict) -> dict:
+    return len(object.keys())
 
 
-def sum_dict(dict):
-    dict = ({
-        'a': 1,
-        'b': 2,
-        'c': 3,
-        'd': 4
-    })
-    # total = sum(value for value in dict if int(value))
-    total = sum(dict.values())
-    return total
+obj = {"name": "shamana", "age": "18"}
+# print(lengths(obj))
+# --------------------------------------------------------------------------------------------------
+# 3. Создайте функцию, которая принимает объект и ключ в качестве
+#   параметров. Затем удалите ключ из объекта и верните
+#   оставшийся объект.
 
 
-print(sum_dict({
-    'a': 1,
-    'b': 2,
-    'c': 3,
-    'd': 4,
-    'e': "hello"
-}))
-# =================================================================================
-# =================================================================================
-# 7. Write a Python program to multiply all the items in a dictionary.
-# !!! NOTE: values could be int or str, if str, convert to int
-# But, if the value is not convertible to int, skip it.
-# ----------------
-# RU: Напишите программу Python для умножения всех элементов в словаре.
-# !!! ПРИМЕЧАНИЕ: значения могут быть int или str, если str, преобразуйте в int
-# Но, если значение нельзя преобразовать в int, пропустите его.
-# ----------------
-# {...: "10", ...: 'qwe', ...: 5}  => 50
+def removed(obj: dict, key: str) -> dict:
+    del obj[key]
+    return obj
 
 
-def multiply_dict(dict):
-    ...
+# obj = {"a": 1, "b": 2, "c": 3}
+# print("Task - 3:", removed(obj, "c"))
+
+print("=============== INTERMEDIATE LEVEL ===============")
+
+# 1. Создайте функцию, которая принимает объект в качестве параметра
+#   и возвращает сумму всех значений, которые являются числами.
 
 
-multiply_dict({
-    'a': 1,
-    'b': 2,
-    'c': 3,
-    'd': 4,
-})
-# 24
-# =================================================================================
-# =================================================================================
-# 8. Write a Python program to remove a key from a dictionary.
-# RU: Напишите программу Python для удаления ключа из словаря.
+def sum_dict(object: dict) -> dict:
+    return sum([int(item) for item in object.values() if str(item).isnumeric()])
+    # vals = object.values()
+    # result = 0
+    # for val in vals:
+    #     val = str(val)
+    #     if val.isnumeric():
+    #         result += int(val)
+    # return result
 
 
-def remove_key(dc, _key):
-    ...
+r = sum_dict({"a": 5, "b": "10", "c": "abc", "d": 15})
+# print("Task - 1:", r)
+# ------------------------------------------------------------------------------
+# 2. Создайте функцию, которая принимает объект в качестве параметра
+#   и преобразует каждый ключ в обратный регистр (назад-вперёд)
+#   и возвращает новый объект.
 
 
-remove_key({
-    'a': 1,
-    'b': 2,
-    'c': 3,
-    'd': 4,
-}, 'b')
-# {'a': 1, 'c': 3, 'd': 4}
-
-# =================================================================================
-# =================================================================================
-
-# 9. Write a Python program to sort a given dictionary by key.
-# RU: Напишите программу Python для сортировки заданного словаря по ключу.
-# ------------
-# ex: {5:"a",  7:"c",   2:"b"} => {2:"b",   5:"a",   7:"c"}
-# ------------
+def new_obj(object: dict) -> dict:
+    # result = {}
+    # for key, value in object.items():
+    #     key = key[::-1]
+    #     result[key] = value
+    # return result
+    # ----------------------------------
+    return {key[::-1]: val for key, val in object.items()}
 
 
-def sort_dict_by_key(dict):
-    ...
+result = {"school": 23, "floor": 3, "room": "biology"}
+# print("Task -2:", new_obj(result))
+# ------------------------------------------------------------------------------
+# 3. Создайте функцию, которая принимает столько объектов, сколько
+#   захотите, и возвращает объект, который содержит все ключи
+#   и значения переданных объектов.
 
 
-sort_dict_by_key({
+def unite_objects(*args: list[dict]) -> dict:
+    # result = {}
+    # for obj in args:
+    #     result.update(obj)
+    # return result
+    # -----------------------------------
+    return {key: val for nested_obj in args for key, val in nested_obj.items()}
+
+
+obj1 = {"a": 1, "b": 2}
+obj2 = {"c": 3, "d": 4}
+obj3 = {"e": 5, "f": 6}
+
+r = unite_objects(obj1, obj2, obj3)
+# print("Task - 3:", r)
+# ------------------------------------------------------------------------------
+# 4. Создайте функцию, которая принимает объект в качестве параметра
+#   и возвращает объект, отсортированный по его ключам
+
+
+def sort_dict_by_key(object: dict) -> dict:
+    keys = sorted(object.keys())
+    result = {}
+    for key in keys:
+        result[key] = object[key]
+    return result
+
+
+r = {
     5: "a",
     7: "c",
     2: "b",
-})
-# {2: 'b', 5: 'a', 7: 'c'}
-# =================================================================================
-# =================================================================================
-# 10. Write a Python program to get the maximum and minimum value in a dictionary.
-# RU: Напишите программу Python для получения максимального и минимального значения в словаре.
-# ------------
-# ex: {'x':500, 'y':5874, 'z': 560, 'a': 7, 'b': 35, 'c': 113}
-# ------------
+}
+# print("Task - 4:", sort_dict_by_key(r))
+# ------------------------------------------------------------------------------
+# 5. Создайте функцию, которая принимает объект в качестве параметра
+#   и возвращает объект, отсортированный по его значениям (а не ключам).
 
 
-def get_max_min(dict):
-    ...
+def sort_dict_by_value(object: dict) -> dict:
+    result = {}
+
+    for val in sorted(object.values()):
+        for key2, val2 in object.items():
+            if val2 == val:
+                result[key2] = val
+    return result
 
 
-get_max_min({
+r = {
+    2: "c",
+    1: "a",
+    3: "b",
+}
+# print("Task - 5:", sort_dict_by_value(r))
+
+print("=============== ADVANCED LEVEL ===============")
+# 1. Напишите функцию, чтобы подсчитать, сколько раз каждое значение
+#   встречается в объекте.
+
+
+def count_val(dict) -> dict:
+    # vals = list(dict.values()) # ['abc', 'bdc', 'abc']
+    # result = {} # {}
+    # for val in vals: # each value in vals
+    #     # result['abc'] = 2
+    #     result[val] = vals.count(val)
+    # return result
+    # --------------------------------------------------
+    return {value: list(dict.values()).count(value) for key, value in list(dict.items())}
+
+
+r = {"a": "abc", "b": "bdc", "c": "abc"}
+# print(count_val(r))
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# 2. Напишите функцию, чтобы получить копию объекта, где ключи стали
+#   значениями, а значения ключами.
+
+
+def new_obj(object: dict) -> dict:
+    # result = {}
+    # for key, val in object.items():
+    #     result[val] = key
+    # return result
+    # -----------------------------------
+    return {val: key for key, val in object.items()}
+
+
+r = {"a": 2, "b": 4, "c": "hello"}
+# print("Task - 2:", new_obj(r))
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# 3. Напишите программу на JS, чтобы получить максимальное и минимальное
+#   значения (если это число) в словаре.
+
+
+def max_min(dict) -> dict:
+    return max(dict.values()), min(dict.values())
+
+
+r = max_min({
     'x': 500,
     'y': 5874,
     'z': 560,
@@ -196,6 +189,145 @@ get_max_min({
     'b': 35,
     'c': 113,
 })
-# 5874, 7
-# =================================================================================
-# =================================================================================
+# print("Task - 3:", r)
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# 4. Вам надо найти количество людей одного типа из массива и сохранить
+#   их в массив категории. В массиве категорий специально допущены ошибки
+#   (исходный массив менять нельзя)
+
+users = [
+    {
+        "id": random.random(),
+        "name": 'Timur',
+        "info": {
+            "school": '235',
+            "faculity": 'SMM'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Imran',
+        "info": {
+            "school": 'ne izvestno',
+            "faculity": 'programming'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Aminjon',
+        "info": {
+            "school": '444',
+            "faculity": 'Dizayn'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Maxmud',
+        "info": {
+            "school": '777',
+            "faculity": '3dsmax'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Muxammad',
+        "info": {
+            "school": '5555',
+            "faculity": 'Backend'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Timur',
+        "info": {
+            "school": '235',
+            "faculity": 'SMM'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Imran',
+        "info": {
+            "school": 'ne izvestno',
+            "faculity": 'programming'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Aminjon',
+        "info": {
+            "school": '444',
+            "faculity": 'Dizayn'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Maxmud',
+        "info": {
+            "school": '777',
+            "faculity": '3dsmax'
+        },
+    },    {
+        "id": random.random(),
+        "name": 'Maxmud',
+        "info": {
+            "school": '777',
+            "faculity": '3dsmax'
+        },
+    },
+    {
+        "id": random.random(),
+        "name": 'Muxammad',
+        "info": {
+            "school": '5555',
+            "faculity": 'Backend'
+        },
+    },
+]
+
+categories = [
+    {
+        "course": ' SMM',
+        "count": 0
+    },
+    {
+        "course": 'PROGRAMMING',
+        "count": 0
+    },
+    {
+        "course": '     3DSMAX',
+        "count": 0
+    },
+    {
+        "course": ' DIZAYN',
+        "count": 0
+    },
+    {
+        "course": '   BACKEND',
+        "count": 0
+    },
+]
+
+
+for user in users:
+    user_course = user['info']['faculity'].lower().strip()
+
+    for category in categories:
+        category_course = category['course'].lower().strip()
+        if user_course == category_course:
+            category['count'] += 1
+        category['course'] = category_course.title()
+
+
+# print("Task - 4:")
+# for item in categories:
+#     print(item)
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# 5. Получите всех пользователей по этой ссылке https://jsonplaceholder.typicode.com/users ...
+#   и разделите их по окончаниям электронной почты (например: com, net, org и т. д.).
+#   Для этого создайте функцию и передайте массив объектов (пользователей)
+#   в качестве параметра.Таким образом, функция вернет объект, где каждый ключ -
+#   это окончание электронной почты, а значение - количество пользователей
+#   с таким окончанием электронной почты.
+print("Task - 5: I cannot do it")

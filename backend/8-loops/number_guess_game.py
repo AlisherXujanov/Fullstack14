@@ -18,20 +18,4 @@
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-# Поле Чудес  |  Mystery Word
-
-# [10 random english words with their meanings and definitions]
-# get 1 random word from these words and show the user its definition
-# ask a user to guess a letter
-# The user has initially 5 lives
-# If the letter that user guessed is right and exists in the word
-#     Show the word with the letter that user guessed
-# ex:   word==banana,    guess==a,    output==_a_a_a
-# If the letter that user guessed is wrong
-#     Subtract 1 from lives
-
-# So on, until the user finds the word or loses all the lives!
-
-
-
 
