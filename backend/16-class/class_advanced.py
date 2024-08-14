@@ -31,6 +31,10 @@ _2 = 'Polymorphism and Encapsulation and Decorators'
 #     def __init__(self):
 #         self._a = 2   # Protected member ‘a’
 #         self.__b = 2  # Private member ‘b’
+#     
+#     @property
+#     def b(self):
+#         return self.__b
 
 # a = A()
 # print(a._a)  # 2
@@ -49,6 +53,7 @@ _2 = 'Polymorphism and Encapsulation and Decorators'
 #     def set_account_details(self, account_number, pin):
 #         self.__account_number = account_number
 #         self.__pin = pin
+#         print("Account created successfully")
 
 #     def get_balance(self, account_number, pin):
 #         if self.__account_number == account_number and self.__pin == pin:
@@ -74,7 +79,19 @@ _2 = 'Polymorphism and Encapsulation and Decorators'
 #             return "Invalid account details"
 
 
-# bank_account1 = BankAccount()
+# ACCOUNT_NUMBER = 123456
+# PIN = 'qweqweqwe'
+
+# ba1 = BankAccount()
+# ba1.set_account_details(ACCOUNT_NUMBER, PIN)
+
+# print(ba1.get_balance("INVALID ACCOUNT", PIN))
+# print(ba1.get_balance(ACCOUNT_NUMBER, PIN))
+
+# print(ba1.deposit(ACCOUNT_NUMBER, PIN, 1000))
+# print(ba1.get_balance(ACCOUNT_NUMBER, PIN))
+
+
 # bank_account1.get_balance(..., ...)
 #############################################################################################
 #################### DECORATORS
@@ -236,15 +253,15 @@ class Client(User):
 
 
 # # =================================================
-user1 = User('John', 'Doe', 25, 'test@gmail.com')
-# print(user1.get_info())
-# =================================================
-client1 = Client("Cathrine", "Mackwold", 10000)
-# print(client1.get_info())
-# =================================================
-result = user1 + client1
-print(result)
-# =================================================
-user1 = User.from_string("John, Doe, 25, test@gmail.com")  # classmethod
-print(user1)
-print(User.is_adult(user1.age))  # staticmethod
+# user1 = User('John', 'Doe', 25, 'test@gmail.com')
+# # print(user1.get_info())
+# # =================================================
+# client1 = Client("Cathrine", "Mackwold", 10000)
+# # print(client1.get_info())
+# # =================================================
+# result = user1 + client1
+# print(result)
+# # =================================================
+# user1 = User.from_string("John, Doe, 25, test@gmail.com")  # classmethod
+# print(user1)
+# print(User.is_adult(user1.age))  # staticmethod
