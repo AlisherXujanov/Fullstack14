@@ -1,22 +1,4 @@
-from functools import reduce
-from typing import List, Tuple
-import math
+# unit test  =>   tests each unit of code 
+# e2e  test  =>   tests the whole system
 
-
-
-# from faker import Faker
-
-
-# random_name = Faker().name()
-# random_email = Faker().email()
-# lorem = Faker().text()
-# print("--------------------------------")
-# print(random_name)
-# print("--------------------------------")
-# print(random_email)
-# print("--------------------------------")
-# print(lorem)
-# print("--------------------------------")
-
-
-
+import unittest
