@@ -134,6 +134,11 @@ UPDATE students SET grades = grades || 98 WHERE name = 'John Doe';
     XML looks like HTML but it is not the same. 
     XML is used to store data and HTML is used to display data.
     HTML is designed to be read by humans, while XML is designed to be read by machines.
+>    <person>
+>        <name>John Doe</name>
+>        <age>30</age>
+>        <city>Pittsburgh</city>
+>    </person>
 >           ex: CREATE TABLE customers (name TEXT, info XML)
 > ------------------------------------------------------------
 
