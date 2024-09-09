@@ -7,6 +7,7 @@ FOREIGN KEY CONSTRAINT
 -- One-to-One Relationship  (1:1)
 -- One-to-Many Relationship (1:M)
 -- Many-to-One Relationship (M:1)
+-- Many-to-Many Relationship (M:M)
 
 
 CREATE TABLE Customers (
@@ -140,6 +141,7 @@ CREATE TABLE laptops (
 
 INSERT INTO laptops (id, ip_address, price)
 VALUES ('a0eebc99-9c0b-4ef8-bb6d-6bb9bd312a11', '192.168.0.138', '$200');
+-- Universally Unique Identifier
 
 SELECT * FROM laptops;
 ```
@@ -184,7 +186,8 @@ SELECT SUM(price) FROM products;
 **COUNT(DISTINCT)** - Returns the number of distinct rows that matches a specified criteria
 ```sql
 SELECT COUNT(*) FROM products;
-SELECT COUNT(DISTINCT price) FROM products;
+SELECT COUNT(DISTINCT name) FROM products;
+SELECT COUNT(DISTINCT type) FROM products;
 ```
 <!-- -------------------------------------------------------------------------------- -->
 **ROUND()** - Rounds a number to a specified number of decimal places
@@ -268,5 +271,8 @@ SELECT country, COUNT(*) FROM customers GROUP BY country HAVING COUNT(*) > 1;
 
 -- ALTER TABLE customers ADD COLUMN full_name VARCHAR(255);
 -- UPDATE customers SET full_name = CONCAT(name, ', email: ', email);
+
+-- AFTERWARDS we can delete name and surname fields
+-- DELETE name, surname from customers;
 ```
 
