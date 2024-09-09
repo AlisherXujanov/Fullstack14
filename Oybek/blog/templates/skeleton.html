@@ -7,10 +7,23 @@
 </head>
 <body>
 
+    {% include "navbar.html" %}
     
-    
-    {% block content %}
-    {% endblock content %}
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
 
 </body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main {
+        transition: 0.3s;
+        padding: 50px 100px;
+    }
+</style>
 </html>

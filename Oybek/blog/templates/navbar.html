@@ -1,0 +1,29 @@
+<style>
+    header nav {
+        overflow: hidden;
+        background-color: #333;
+    }
+    header nav a {
+        float: right;
+        padding: 20px;
+        color: snow;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    header nav a:hover {
+        background-color: green;
+    }
+
+</style>
+
+<header>
+    <nav>
+        <a href="{% url 'home' %}" id="logo" style="float: left;">
+            Blog
+        </a>
+        <a href="{% url 'create' %}" class="nav-link">Create</a>
+        <a href="{% url 'about' %}" class="nav-link">About</a>
+        <a href="{% url 'news' %}" class="nav-link">News</a>
+        <a href="{% url 'blog' %}" class="nav-link">Blogs</a>
+    </nav>
+</header>
