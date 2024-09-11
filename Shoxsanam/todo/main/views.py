@@ -6,3 +6,10 @@ def home_page(request):
         "title": "Welcome to Django Todo App",
     }
     return render(request, "home.html", context)
+
+
+def about_page(request):
+    context = {
+        "title": "About Us",
+    }
+    return render(request, "about.html", context)
