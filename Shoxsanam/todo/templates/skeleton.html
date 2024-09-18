@@ -8,13 +8,11 @@
 <body>
 
     {% include "navbar.html" %}
-    {% include "right-side.html" %}
     
     <main class="content">
         {% block content %}
          
         {% endblock content %}
-        
     </main>
 
     
@@ -24,7 +22,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        transition: 0.3s;
     }
     body {
         width: 100%;

@@ -13,3 +13,8 @@ def about_page(request):
         "title": "About Us",
     }
     return render(request, "about.html", context)
+
+
+def sticky_wall(request):
+    return render(request, "sticky_wall.html")
+    
