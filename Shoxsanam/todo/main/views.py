@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Todos 
 
 # Create your views here.
 def home_page(request):
@@ -16,5 +17,9 @@ def about_page(request):
 
 
 def sticky_wall(request):
-    return render(request, "sticky_wall.html")
+    context = {
+        'todos': Todos.objects.all()
+    }
+    
+    return render(request, "sticky_wall.html", context)
     

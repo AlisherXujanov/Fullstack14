@@ -1,5 +1,42 @@
 {% extends 'skeleton.html' %}
 
+
+
 {% block content %}
+    <style>
+    .todos-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .todos-wrapper  .todo {
+        border-radius: 10px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+    .todos-wrapper  .todo pre {
+        font-family: monospace;
+    }
+    </style>
+
+
     <h1>Sticky Wall</h1>
+
+    <div class="todos-wrapper">
+        {% for todo in todos %}
+            <div class="todo" style="background-color: {{todo.background_color}}; color: {{ todo.text_color }}">
+                <h2>{{ todo.title }}</h2>
+                <pre>
+{{ todo.description }}
+                </pre>
+            </div>
+        {% endfor %}
+        
+        <div class="todo">
+            {% comment %} ... {% endcomment %}
+        </div>
+    </div>
+
+
 {% endblock %}
