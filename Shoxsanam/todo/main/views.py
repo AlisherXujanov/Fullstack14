@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Todos 
+from .forms import TodosForm 
 
 # Create your views here.
 def home_page(request):
@@ -57,3 +58,11 @@ def sign_out(request):
     }
     return render(request, "sign-out.html",context)
     
+
+def create_new_todo(request):
+    form = TodosForm()
+    context = {
+        "title": "Create New Todo",
+        "form": form,
+    }
+    return render(request, "create-new-todo.html", context)
