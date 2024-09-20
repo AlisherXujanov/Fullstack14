@@ -17,17 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main.views import *
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("", home_page),
     path("about/", about_page, name="about"),
     path("sticky_wall/", sticky_wall, name="sticky_wall"),
-    path("upcoming/", upcoming, name="upcoming"),
-    path("calendar/", calendar, name="calendar"),
-    path("today/", today, name="today"),
-    path("settings/", settings, name="settings"),
+    path("upcoming/", upcoming_page, name="upcoming_page"),
+    path("calendar/", calendar_page, name="calendar_page"),
+    path("today/", today_page, name="today_page"),
+    path("settings/", settings_page, name="settings_page"),
     path("sign-out/", sign_out, name="sign-out"),
-
-
+    
+    # =========================================
+    # ADMIN
     path('admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

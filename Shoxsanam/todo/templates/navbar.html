@@ -18,7 +18,7 @@
                 TASKS
             </h6>
             <div class="upcoming">
-                <a href="{% url 'upcoming' %}">
+                <a href="{% url 'upcoming_page' %}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="today">
-                <a href="{% url 'today' %}">
+                <a href="{% url 'today_page' %}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-list-task" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="calendar">
-                <a href="{% url 'calendar' %}">
+                <a href="{% url 'calendar_page' %}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-calendar3" viewBox="0 0 16 16">
                         <path
@@ -135,7 +135,7 @@
 
     <div class="parametrs">
         <div class="settings">
-            <a href="{% url 'settings' %}">
+            <a href="{% url 'settings_page' %}">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sliders"
                     viewBox="0 0 16 16">
@@ -159,100 +159,3 @@
         </div>
     </div>
 </nav>
-<style>
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    nav .searchbar {
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        margin: 20px 0 40px 0;
-        border: 1px solid gray;
-        width: 100%;
-        height: 35px;
-        padding: 0 10px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 5px;
-    }
-
-    nav .searchbar svg {
-        position: relative;
-        bottom: 2px;
-    }
-
-    nav .searchbar input {
-        border: none;
-        outline: none;
-        background-color: transparent;
-    }
-
-
-
-    .sections>.tasks>div>svg {
-        position: relative;
-        top: 3px;
-        margin-right: 5px;
-    }
-
-    .sections>.tasks>.upcoming,
-    .sections>.tasks>.today,
-    .sections>.tasks>.calendar,
-    .sections>.tasks>.sticky,
-    .sections>.lists>.personal,
-    .sections>.lists>.work,
-    .sections>.lists>.first-list,
-    .sections>.lists>.new-list {
-        margin: 12px 5px;
-    }
-
-    .sections>.lists>h6 {
-        margin: 15px 0;
-    }
-
-    .sections>.tags>h6 {
-        margin: 15px 0;
-    }
-
-    .sections>.tags>.tgs {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sections>.tags>.tgs>.tag-1 {
-        background-color: lightblue;
-        font-weight: bold;
-        font-size: 13px;
-        border-radius: 5px;
-        padding: 5px 12px;
-    }
-
-    .sections>.tags>.tgs>.tag-2 {
-        background-color: lightpink;
-        font-weight: bold;
-        font-size: 13px;
-        border-radius: 5px;
-        padding: 5px 12px;
-        margin-left: 5px;
-    }
-
-    .sections>.tags>.tgs>.new-tag {
-        background-color: #6666;
-        font-weight: bold;
-        font-size: 13px;
-        border-radius: 5px;
-        padding: 5px 12px;
-        margin-left: 5px;
-    }
-
-    .parametrs {
-        margin-top: 50px;
-    }
-
-    .parametrs>div {
-        margin-bottom: 10px;
-    }
-</style>

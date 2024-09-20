@@ -1,0 +1,13 @@
+$tag-padding: 5px 12px;
+$tag-font-size: 13px;
+$tag-font-weight: bold;
+$tag-border-radius: 5px;
+
+
+
+@mixin flex-center($justify: center, $align: center, $gap: 10px) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}

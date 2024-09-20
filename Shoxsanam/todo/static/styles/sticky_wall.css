@@ -1,0 +1,22 @@
+.todos-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+.todos-wrapper .todo {
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.todos-wrapper .todo pre {
+  font-family: monospace;
+}
+.todos-wrapper .todo.new-todo {
+  background-color: lightgrey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}/*# sourceMappingURL=sticky_wall.css.map */

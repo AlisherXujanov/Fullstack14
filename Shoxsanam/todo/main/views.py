@@ -20,39 +20,40 @@ def sticky_wall(request):
     context = {
         'todos': Todos.objects.all()
     }
-    
     return render(request, "sticky_wall.html", context)
 
-def upcoming(request):
+
+def upcoming_page(request):
     context = {
         "title": "Upcoming",
     }
-    
     return render(request, "upcoming.html",context)
 
-def calendar(request):
+
+def calendar_page(request):
     context = {
         "title": "Calendar",
     }
-    
     return render(request, "calendar.html",context)
 
-def today(request):
+
+def today_page(request):
     context = {
         "title": "Today",
     }
-    
     return render(request, "today.html",context)
-def settings(request):
+
+
+def settings_page(request):
     context = {
         "title": "Settings",
     }
-    
     return render(request, "settings.html",context)
+
+
 def sign_out(request):
     context = {
         "title": "Sign Out",
     }
-    
     return render(request, "sign-out.html",context)
     

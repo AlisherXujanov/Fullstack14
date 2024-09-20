@@ -1,0 +1,90 @@
+nav {
+  transition: 0.2s;
+}
+nav.left-navbar {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 20px;
+}
+nav .content {
+  transition: 0.2s;
+  padding: 20px;
+}
+nav .searchbar {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin: 20px 0 40px 0;
+  border: 1px solid gray;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+nav .searchbar svg {
+  position: relative;
+  bottom: 2px;
+}
+nav .searchbar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+nav .sections .tasks div svg {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+nav .sections .tasks .upcoming,
+nav .sections .tasks .today,
+nav .sections .tasks .calendar,
+nav .sections .tasks .sticky {
+  margin: 12px 5px;
+}
+nav .sections .lists .personal,
+nav .sections .lists .work,
+nav .sections .lists .first-list,
+nav .sections .lists .new-list {
+  margin: 12px 5px;
+}
+nav .sections .lists h6 {
+  margin: 15px 0;
+}
+nav .sections .tags h6 {
+  margin: 15px 0;
+}
+nav .sections .tags .tgs {
+  display: flex;
+  flex-direction: row;
+}
+nav .sections .tags .tgs .tag-1 {
+  background-color: lightblue;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px 12px;
+}
+nav .sections .tags .tgs .tag-2 {
+  background-color: lightpink;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  margin-left: 5px;
+}
+nav .sections .tags .tgs .new-tag {
+  background-color: rgba(102, 102, 102, 0.4);
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  margin-left: 5px;
+}
+nav .parametrs {
+  margin-top: 50px;
+}
+nav .parametrs div {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=navbar.css.map */

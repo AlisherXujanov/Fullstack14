@@ -1,0 +1,119 @@
+@import "./settings";
+
+nav {
+    transition: 0.2s;
+
+    &.left-navbar {
+        background-color: #eee;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .content {
+        transition: 0.2s;
+        padding: 20px;
+    }
+
+    .searchbar {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        margin: 20px 0 40px 0;
+        border: 1px solid gray;
+        width: 100%;
+        height: 35px;
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+
+        svg {
+            position: relative;
+            bottom: 2px;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+    }
+
+    .sections {
+        .tasks {
+            div {
+                svg {
+                    position: relative;
+                    top: 3px;
+                    margin-right: 5px;
+                }
+            }
+
+            .upcoming,
+            .today,
+            .calendar,
+            .sticky {
+                margin: 12px 5px;
+            }
+        }
+
+        .lists {
+
+            .personal,
+            .work,
+            .first-list,
+            .new-list {
+                margin: 12px 5px;
+            }
+
+            h6 {
+                margin: 15px 0;
+            }
+        }
+
+        .tags {
+            h6 {
+                margin: 15px 0;
+            }
+
+            .tgs {
+                display: flex;
+                flex-direction: row;
+
+                .tag-1 {
+                    background-color: lightblue;
+                    font-weight: $tag-font-weight;
+                    font-size: $tag-font-size;
+                    border-radius: $tag-border-radius;
+                    padding: $tag-padding;
+                }
+
+                .tag-2 {
+                    background-color: lightpink;
+                    font-weight: $tag-font-weight;
+                    font-size: $tag-font-size;
+                    border-radius: $tag-border-radius;
+                    padding: $tag-padding;
+                    margin-left: 5px;
+                }
+
+                .new-tag {
+                    background-color: #6666;
+                    font-weight: $tag-font-weight;
+                    font-size: $tag-font-size;
+                    border-radius: $tag-border-radius;
+                    padding: $tag-padding;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .parametrs {
+        margin-top: 50px;
+
+        div {
+            margin-bottom: 10px;
+        }
+    }
+}
