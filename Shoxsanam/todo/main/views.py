@@ -22,4 +22,37 @@ def sticky_wall(request):
     }
     
     return render(request, "sticky_wall.html", context)
+
+def upcoming(request):
+    context = {
+        "title": "Upcoming",
+    }
+    
+    return render(request, "upcoming.html",context)
+
+def calendar(request):
+    context = {
+        "title": "Calendar",
+    }
+    
+    return render(request, "calendar.html",context)
+
+def today(request):
+    context = {
+        "title": "Today",
+    }
+    
+    return render(request, "today.html",context)
+def settings(request):
+    context = {
+        "title": "Settings",
+    }
+    
+    return render(request, "settings.html",context)
+def sign_out(request):
+    context = {
+        "title": "Sign Out",
+    }
+    
+    return render(request, "sign-out.html",context)
     

@@ -22,6 +22,11 @@ urlpatterns = [
     path("", home_page),
     path("about/", about_page, name="about"),
     path("sticky_wall/", sticky_wall, name="sticky_wall"),
+    path("upcoming/", upcoming, name="upcoming"),
+    path("calendar/", calendar, name="calendar"),
+    path("today/", today, name="today"),
+    path("settings/", settings, name="settings"),
+    path("sign-out/", sign_out, name="sign-out"),
 
 
     path('admin/', admin.site.urls),
