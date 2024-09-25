@@ -5,14 +5,16 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: snow;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 10px;
-    padding: 30px;
-    transition: 0.2s;
+    &>section {
+        width: 100%;
+        height: 100vh;
+        background-color: snow;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 10px;
+        padding: 30px;
+        transition: 0.2s;
+    }
 }
 
 a {
@@ -24,4 +26,14 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+
+#messages-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 50px;
 }

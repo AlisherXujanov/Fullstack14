@@ -2,13 +2,15 @@
 {% load django_bootstrap5 %}
 {% load static %}
 
-
 {% block css %}
-  <link rel="stylesheet" href="{% static 'styles/form.css' %}">
-{% endblock css %}
+  <link rel="stylesheet" href="{% static 'styles/form.css' %}" />
+{% endblock %}
 
 {% block content %}
-  <h1>{{ title }}</h1>
+  <h1>
+    {{ title|title }}
+    <small class="float-end">{% now 'Y-m-d' %}</small>
+  </h1>
 
-  {% include "form_snippets.html" with form=form %}
+  {% include 'form_snippets.html' with form=form %}
 {% endblock %}

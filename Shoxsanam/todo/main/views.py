@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Todos 
 from .forms import TodosForm 
+from django.contrib import messages
+
 
 # Create your views here.
 def home_page(request):
@@ -60,6 +62,13 @@ def sign_out(request):
     
 
 def create_new_todo(request):
+    if request.method == "POST":
+        form = TodosForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Todo created successfully")
+            return redirect("sticky_wall")
+
     form = TodosForm()
     context = {
         "title": "Create New Todo",

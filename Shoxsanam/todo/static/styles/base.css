@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body > section {
   width: 100%;
   height: 100vh;
   background-color: snow;
@@ -24,4 +24,13 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+#messages-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  left: 50px;
 }/*# sourceMappingURL=base.css.map */

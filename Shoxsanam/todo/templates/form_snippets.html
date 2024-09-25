@@ -1,6 +1,6 @@
 {% load django_bootstrap5 %}
 
-<form id="todo-main-form" enctype="multipart/form-data">
+<form id="todo-main-form" method="POST" enctype="multipart/form-data">
   {% csrf_token %}
   <!--  
         CSRF_TOKEN - is needed for protection against 

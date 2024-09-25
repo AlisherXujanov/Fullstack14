@@ -6,32 +6,47 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo</title>
-    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/navbar.css' %}" />
 
     {% block css %}
-    {% endblock css %}
 
-    <!-- 
+    {% endblock %}
+
+    <!--   
         CRUD  ->  Create Read Update Delete
-    -->
-</head>
+      -->
+  </head>
 
-<body>
+  <body>
+    {% comment %} <div id="messages-content">
+      {% if messages %}
+        <ul class="messages">
+          {% for message in messages %}
+            <li class="{% if message.tags %}
+                {{ message.tags }}
+              {% else %}
+                
+                info
 
-    {% include "navbar.html" %}
+              {% endif %}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div> {% endcomment %}
 
-    <main class="content">
+    <section>
+      {% include 'navbar.html' %}
+
+      <main class="content">
         {% block content %}
 
-        {% endblock content %}
-    </main>
-
-
-</body>
+        {% endblock %}
+      </main>
+    </section>
+  </body>
 </html>
