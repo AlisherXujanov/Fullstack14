@@ -1,0 +1,12 @@
+@import "./settings";
+
+form#todo-main-form {
+    button[type="submit"] {
+        &.btn.btn-outline-primary {
+            &:hover {
+                background: $submit-btn-bg;
+                color: snow;
+            }
+        }
+    }
+}

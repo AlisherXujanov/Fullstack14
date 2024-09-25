@@ -1,0 +1,13 @@
+{% load django_bootstrap5 %}
+
+<form id="todo-main-form" enctype="multipart/form-data">
+  {% csrf_token %}
+  <!--  
+        CSRF_TOKEN - is needed for protection against 
+                     Cross-Site Request Forgery (CSRF) attacks.
+     -->
+
+  {% bootstrap_form form %}
+
+  <button type="submit" class="btn btn-outline-primary btn-lg btn-block col-12 float-end">Submit</button>
+</form>

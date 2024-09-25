@@ -1,7 +1,14 @@
 {% extends 'skeleton.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'styles/form.css' %}">
+{% endblock css %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
+  <h1>{{ title }}</h1>
 
-    {{ form.as_p }}
+  {% include "form_snippets.html" with form=form %}
 {% endblock %}

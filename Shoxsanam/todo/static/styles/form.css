@@ -1,0 +1,4 @@
+form#todo-main-form button[type=submit].btn.btn-outline-primary:hover {
+  background: linear-gradient(to right, #f5f5f5, #5651e2, #f5f5f5);
+  color: snow;
+}/*# sourceMappingURL=form.css.map */
