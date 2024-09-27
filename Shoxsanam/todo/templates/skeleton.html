@@ -2,51 +2,40 @@
 {% load django_bootstrap5 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
-{% bootstrap_messages %}
+
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo</title>
-    <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
-    <link rel="stylesheet" href="{% static 'styles/navbar.css' %}" />
 
-    {% block css %}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo</title>
+  <link rel="stylesheet" href="{% static 'styles/base.css' %}" />
+  <link rel="stylesheet" href="{% static 'styles/navbar.css' %}" />
 
-    {% endblock %}
+  {% block css %}
 
-    <!--   
+  {% endblock %}
+
+  <!--   
         CRUD  ->  Create Read Update Delete
       -->
-  </head>
+</head>
 
-  <body>
-    {% comment %} <div id="messages-content">
-      {% if messages %}
-        <ul class="messages">
-          {% for message in messages %}
-            <li class="{% if message.tags %}
-                {{ message.tags }}
-              {% else %}
-                
-                info
+<body>
+  <div id="messsages">
+    {% bootstrap_messages %}
+  </div>
+  <section>
+    {% include 'navbar.html' %}
 
-              {% endif %}">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </div> {% endcomment %}
+    <main class="content">
+      {% block content %}
 
-    <section>
-      {% include 'navbar.html' %}
+      {% endblock %}
+    </main>
+  </section>
+</body>
 
-      <main class="content">
-        {% block content %}
-
-        {% endblock %}
-      </main>
-    </section>
-  </body>
 </html>
