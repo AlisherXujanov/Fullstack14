@@ -13,4 +13,5 @@ urlpatterns = [
     path("create-new-todo/", create_new_todo, name="create_new_todo"),
     path("update-todo/<int:pk>", update_todo, name="update_todo"),
     path("todo-details/<int:pk>", todo_details, name="todo_details"),
+    path("delete-todo/<int:pk>", delete_todo, name="delete_todo"),
 ]

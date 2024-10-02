@@ -95,6 +95,12 @@ def update_todo(request, pk:int):
     return render(request, "update-todo.html", context)
 
 
+def delete_todo(request, pk:int):
+    todo_item = get_object_or_404(Todos, id=pk)
+    todo_item.delete()
+    messages.warning(request, "Todo deleted")
+    return redirect("sticky_wall")
+
 
 def todo_details(request, pk:int):
     todo = get_object_or_404(Todos, id=pk)
