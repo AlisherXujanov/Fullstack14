@@ -25,31 +25,38 @@
             display: -webkit-box;
             -webkit-line-clamp: 6;
             -webkit-box-orient: vertical;
-        }
 
-        .todo-footer {
-            display: block;
-            position: absolute;
-            right: 10px;
-            bottom: 0;
-            height: 40px;
-
-            a {
-                display: inline-block;
+            .todo-title-time {
+                .todo-created-time {
+                    float: right;
+                    font-size: 8px;
+                }
             }
         }
+    }
 
-        pre {
-            font-family: monospace;
-        }
+    .todo-footer {
+        display: block;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        height: 40px;
 
-        &.new-todo {
-            background-color: lightgrey;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+        a {
+            display: inline-block;
         }
+    }
+
+    pre {
+        font-family: monospace;
+    }
+
+    &.new-todo {
+        background-color: lightgrey;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }

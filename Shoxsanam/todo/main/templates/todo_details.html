@@ -1,9 +1,22 @@
 {% extends 'skeleton.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'styles/todo_details.css' %}" />
+{% endblock %}
+
 
 
 {% block content %}
+<div class="todo-details">
     <h1>{{ title }}</h1>
-    <p>
+    <p class="todo-description">
         {{ todo.description }}
     </p>
+    <div class="buttons">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-warning">Edit</button>
+        <button class="btn btn-danger">Cancel</button>
+    </div>
+</div>
 {% endblock %}

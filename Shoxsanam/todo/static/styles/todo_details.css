@@ -1,0 +1,10 @@
+.todo-details {
+  height: 400px;
+  background-color: lightblue;
+  padding: 20px;
+}
+.todo-details .buttons {
+  float: right;
+  margin-top: 110px;
+  margin-right: 20px;
+}/*# sourceMappingURL=todo_details.css.map */

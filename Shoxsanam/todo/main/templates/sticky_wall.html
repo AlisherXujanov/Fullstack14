@@ -12,10 +12,13 @@
     {% for todo in todos %}
       <div class="todo" style="background-color: {{ todo.background_color }}; color: {{ todo.text_color }}">
         <div class="todo-content">
-          <h2 class="todo-title">{{ todo.title }}</h2>
+          <div class="todo-title-time">
+            <h2 class="todo-title">{{ todo.title }}</h2>
+            <p class="todo-created-time">{{ todo.created_at }}</p>
+          </div>
           <p>{{ todo.description }}</p>
         </div>
-
+        
         <div class="todo-footer">
           <a href="{% url 'todo_details' todo.id %}" class="btn btn-success btn-sm">View</a>
           <a href="#" class="btn btn-primary btn-sm">Update</a>
