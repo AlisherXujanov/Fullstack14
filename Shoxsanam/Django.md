@@ -240,9 +240,10 @@ https://jinja.palletsprojects.com/en/3.1.x/templates/
 <!-- ----------------------------- -->
 <!-- ----------------------------- -->
 <!-- Creating variables -->
-{% with  variable_name = 'value' | filter-name %}
+{% with  variable_name = 'value'|filter-name %}
     <p>{{ variable_name }}</p>
 {% endwith %}
+
 
 ```
 Python filters:

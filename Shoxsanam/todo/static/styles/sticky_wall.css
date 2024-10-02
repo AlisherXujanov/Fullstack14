@@ -22,21 +22,17 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
-.todos-wrapper .todo .todo-footer {
-  display: block;
-  position: absolute;
-  right: 10px;
-  bottom: 0;
-  height: 40px;
+.todos-wrapper .todo .todo-content .todo-title-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
 }
-.todos-wrapper .todo .todo-footer a {
-  display: inline-block;
-}
-.todos-wrapper .todo pre {
-  font-family: monospace;
+.todos-wrapper .todo .todo-content .todo-title-time .todo-created-time {
+  width: 38%;
 }
 .todos-wrapper .todo.new-todo {
   background-color: lightgrey;
@@ -45,4 +41,17 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.todos-wrapper .todo-footer {
+  display: block;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  height: 40px;
+}
+.todos-wrapper .todo-footer a {
+  display: inline-block;
+}
+.todos-wrapper pre {
+  font-family: monospace;
 }/*# sourceMappingURL=sticky_wall.css.map */

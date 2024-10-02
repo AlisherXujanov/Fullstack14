@@ -14,7 +14,10 @@
         <div class="todo-content">
           <div class="todo-title-time">
             <h2 class="todo-title">{{ todo.title }}</h2>
-            <p class="todo-created-time">{{ todo.created_at }}</p>
+            <p class="todo-created-time">
+              <b>Created at:</b>
+              {{ todo.created_at|date:"F j" }}
+            </p>
           </div>
           <p>{{ todo.description }}</p>
         </div>

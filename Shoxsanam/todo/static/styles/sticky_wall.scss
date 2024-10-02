@@ -1,3 +1,5 @@
+@import "./settings";
+
 .todos-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -23,15 +25,25 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 6;
+            -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
 
             .todo-title-time {
+                @include flex-center(space-between, flex-start, 5px);
+
                 .todo-created-time {
-                    float: right;
-                    font-size: 8px;
+                    width: 38%;
                 }
             }
+        }
+
+        &.new-todo {
+            background-color: lightgrey;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
         }
     }
 
@@ -51,12 +63,5 @@
         font-family: monospace;
     }
 
-    &.new-todo {
-        background-color: lightgrey;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
+
 }
