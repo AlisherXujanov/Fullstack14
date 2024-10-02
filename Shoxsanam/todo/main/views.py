@@ -77,6 +77,25 @@ def create_new_todo(request):
     return render(request, "create-new-todo.html", context)
 
 
+def update_todo(request, pk:int):
+    todo_item = get_object_or_404(Todos, id=pk)
+
+    if request.method == "POST":
+        form = TodosForm(request.POST, instance=todo_item)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Todo updated successfully")
+            return redirect("sticky_wall")
+
+    form = TodosForm(instance=todo_item)
+    context = {
+        "title": "Update Todo",
+        "form": form,
+    }
+    return render(request, "update-todo.html", context)
+
+
+
 def todo_details(request, pk:int):
     todo = get_object_or_404(Todos, id=pk)
     context = {

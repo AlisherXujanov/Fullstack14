@@ -11,5 +11,6 @@ urlpatterns = [
     path("settings/", settings_page, name="settings_page"),
     path("sign-out/", sign_out, name="sign_out"),
     path("create-new-todo/", create_new_todo, name="create_new_todo"),
+    path("update-todo/<int:pk>", update_todo, name="update_todo"),
     path("todo-details/<int:pk>", todo_details, name="todo_details"),
 ]
