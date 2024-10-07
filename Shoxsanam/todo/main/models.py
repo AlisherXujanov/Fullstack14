@@ -1,5 +1,7 @@
 from django.db import models
 
+# ORM  ->  Object Relational Mapping
+
 # Create your models here.
 class Todos(models.Model):
     title = models.CharField(max_length=255)
