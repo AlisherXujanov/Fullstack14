@@ -65,6 +65,8 @@ def create_new_todo(request):
     if request.method == "POST":
         form = TodosForm(request.POST)
         if form.is_valid():
+            form.save(commit=False)
+            form.instance.owner = request.user
             form.save()
             messages.success(request, "Todo created successfully")
             return redirect("sticky_wall")

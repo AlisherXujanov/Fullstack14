@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # ORM  ->  Object Relational Mapping
 
@@ -6,7 +7,7 @@ from django.db import models
 class Todos(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    owner = models.CharField(max_length=20)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     deadline = models.DateTimeField(null=True, blank=True)
     background_color = models.CharField(max_length=20, default='lightblue')
     text_color = models.CharField(max_length=20, default='black')

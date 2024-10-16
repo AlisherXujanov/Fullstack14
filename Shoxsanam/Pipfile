@@ -8,6 +8,7 @@ django = "*"
 django-bootstrap5 = "*"
 django-cleanup = "*"
 pillow = "*"
+django-allauth = "*"
 
 [dev-packages]
 
